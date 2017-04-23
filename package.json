@@ -4,6 +4,7 @@
   "homepage": "http://blog.gauravagarwalr.com",
   "twitter": "gauravagarwalr",
   "repository": "git@github.com:gauravagarwalr/gauravagarwalr.github.io.git",
+  "github": "https://github.com/gauravagarwalr",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
     "lint:css": "stylelint \"src/**/*.css\"",
