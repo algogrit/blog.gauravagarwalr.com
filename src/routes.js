@@ -23,8 +23,13 @@ const PageContainer = (props) => (
   />
 )
 
+function logPageView() {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
+}
+
 export default (
-  <Route component={ AppContainer } >
+  <Route component={ AppContainer } onUpdate={logPageView} >
     <Route path="*" component={ PageContainer } />
   </Route>
 )
