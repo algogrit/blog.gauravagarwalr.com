@@ -1,4 +1,6 @@
+import md5 from "md5"
 import React, { PropTypes } from "react"
+import ReactDisqusThread from "react-disqus-thread"
 
 import LatestPosts from "../../components/LatestPosts"
 import Page from "../Page"
@@ -24,7 +26,12 @@ const Post = (props) => {
           </header>
         </div>
       }
-    >
+      >
+      <hr />
+      <ReactDisqusThread
+        shortname="gauravagarwalr"
+        identifier={md5(props.head.title)}
+        title={props.head.title}/>
       <hr />
       <LatestPosts />
     </Page>
