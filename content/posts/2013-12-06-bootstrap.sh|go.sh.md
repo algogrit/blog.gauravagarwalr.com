@@ -1,5 +1,5 @@
 ---
-title: "Bootstrap.sh Pattern"
+title: "Bootstrap.sh | Go.sh"
 layout: Post
 date: 2013-12-06
 ---
