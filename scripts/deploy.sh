@@ -6,7 +6,7 @@ $(npm bin)/rimraf .git
 git init && \
 git add . && \
 git commit -m "Deploy to GitHub Pages" && \
-git push --force "${GIT_DEPLOY_REPO}" master:gh-pages
+git push --force "${GIT_DEPLOY_REPO}" master
 
 # ! #
 # IF YOU USE A USERNAME.GITHUB.IO ROOT DOMAIN, PLEASE READ THE WARNING BELOW
