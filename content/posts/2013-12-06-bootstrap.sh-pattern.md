@@ -38,7 +38,7 @@ There exists a similar file for this site as well. You can curl from [here](/boo
 
 ### bootstrap.sh
 
-{% highlight bash %}
+```bash
 #!/usr/bin/env bash
 which rbenv
 is_rbenv_present=$?
@@ -51,7 +51,7 @@ else
 	./scripts/setup.sh
 	./scripts/run.sh
 fi
-{% endhighlight %}
+```
 
 This is the master file, and is the only file expected to be invoked directly by the user. The only necessary external dependency I am expecting to be full-filled is the rbenv, which is a version/environment manager for the ruby language (RVM is the more widely used one, but it has its own issues, on which I will discuss later).
 
@@ -59,7 +59,7 @@ The script does not go ahead and install the version manager, if not found, but 
 
 ### scripts/setup.sh
 
-{% highlight bash %}
+```bash
 #!/usr/bin/env bash
 
 rbenv versions | grep `cat .ruby-version` | grep '*'
@@ -71,17 +71,17 @@ fi
 
 echo "Installing the required gems..."
 bundle
-{% endhighlight %}
+```
 
 This is the script invoked when, the external dependencies are satisfied. Here the idea is to check if the right ruby version is installed and currently in use. Next, it tries to install it, if not found. And then it uses the bundle gem to resolve and install the dependencies as listed in the `Gemfile`.
 
 ### scripts/run.sh
 
-{% highlight bash %}
+```bash
 #!/usr/bin/env bash
 
 jekyll serve -w
-{% endhighlight %}
+```
 
 For this application, this is the shortest script and is really a one liner. But, for more complicated projects, I would perhaps check if the right configuration settings have been made, start the database server and all the other standard tools which the application depends on during run time.
 
