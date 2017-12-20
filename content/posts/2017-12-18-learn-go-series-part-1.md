@@ -4,7 +4,7 @@ layout: Post
 date: 2017-12-18
 ---
 
-This is a **Part 1** of "**Learn go**" series. This series assumes you have a general familiarity of the golang syntax and types. If not, I urge you to follow the interactive [tour of go][TourOfGo] and/or watch [Russ Cox's video][TourOfGoVideo]
+This is **Part 1** of "**Learn go**" series. This series assumes you have a general familiarity of the golang syntax and types. If not, I urge you to follow the interactive [tour of go][TourOfGo] and/or watch [Russ Cox's video][TourOfGoVideo]
 
 In this post, I will be walking you through an example of writing a *Hello World* json end point. So lets begin with...
 
