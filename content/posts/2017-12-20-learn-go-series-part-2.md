@@ -165,7 +165,7 @@ We have built a simple way of storing new user information along with their pass
 
 Signing off for now. Please leave your thoughts and comments in the section below.
 
-[LearnGoPartI]: blog.gauravagarwalr.com/posts/2017-12-18-learn-go-series-part-1/
+[LearnGoPartI]: http://blog.gauravagarwalr.com/posts/2017-12-18-learn-go-series-part-1/
 [HashingSecurity]: https://crackstation.net/hashing-security.htm
 [CryptoSaltAndHash]: https://crypto.stackexchange.com/questions/1776/can-you-help-me-understand-what-a-cryptographic-salt-is
 [ZeroValues]: https://tour.golang.org/basics/12
