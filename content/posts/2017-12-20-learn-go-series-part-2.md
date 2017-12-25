@@ -158,7 +158,7 @@ func HashAndSalt(pwd string) string {
 
 We have built a simple way of storing new user information along with their password in a secure format. Gorm does a lot of things right.
 
-# Caveats & Hon
+# Caveats & Honorable mentions
 
   * [Go zero values][ZeroValues] - Go doesn't do `nil` unless the type is a pointer
   * [Go validator][GoValidator] - Validates values using tags
