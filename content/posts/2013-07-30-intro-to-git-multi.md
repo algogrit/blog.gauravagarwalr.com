@@ -2,6 +2,7 @@
 layout: Post
 title:  "Introducing git multi"
 date:   2013-07-30
+tags: git, utility
 ---
 
 Hiya there,

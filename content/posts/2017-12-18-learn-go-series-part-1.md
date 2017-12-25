@@ -2,6 +2,7 @@
 title: "Learn go series: Part I - Hello World as a service"
 layout: Post
 date: 2017-12-18
+tags: learn-go-series, go, api
 ---
 
 This is **Part 1** of "**Learn go**" series. This series assumes you have a general familiarity of the golang syntax and types. If not, I urge you to follow the interactive [tour of go][TourOfGo] and/or watch [Russ Cox's video][TourOfGoVideo]

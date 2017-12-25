@@ -2,6 +2,7 @@
 title: "To rebase or not to rebase?"
 layout: Post
 date: 2017-02-18
+tags: git, rebase
 ---
 
 So, me and Pavan (my colleague and friend at TarkaLabs) were discussing on how to handle the different scenarios he has faced while working with git. He would find himself in position where he isn't sure if he should do a `git merge` or `git rebase`. Sometimes he would do the other causing a state where the branch needs to be force pushed `git push -f`!

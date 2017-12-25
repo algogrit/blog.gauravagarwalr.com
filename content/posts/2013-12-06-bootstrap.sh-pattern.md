@@ -2,6 +2,7 @@
 title: "Bootstrap.sh Pattern"
 layout: Post
 date: 2013-12-06
+tags: setup, devops, utility
 ---
 
 *"If I have seen further it is by standing on ye sholders of Giants"* - **Issac Newton**

@@ -2,6 +2,7 @@
 layout: Post
 title:  "Introduction to Functional Reactive Programming"
 date:   2013-06-25
+tags: frp
 ---
 
 For all functional enthusiasts. I am pretty sure you would have heard the term Functional Reactive Programming, but might not have completely understood the concept. [Here][wikipedia] is the link to the wikipedia article on the concept.

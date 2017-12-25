@@ -3,6 +3,7 @@ import React, { PropTypes } from "react"
 import ReactDisqusThread from "react-disqus-thread"
 
 import LatestPosts from "../../components/LatestPosts"
+import RelatedPosts from "../../components/RelatedPosts"
 import Page from "../Page"
 
 import styles from "./index.css"
@@ -10,6 +11,8 @@ import styles from "./index.css"
 const Post = (props) => {
   // it's up to you to choose what to do with this layout ;)
   const pageDate = props.head.date ? new Date(props.head.date) : null
+
+  const pageTag = props.head.tags
 
   return (
     <Page
@@ -27,6 +30,8 @@ const Post = (props) => {
         </div>
       }
       >
+      <hr />
+      <RelatedPosts relatedTags={pageTag.split(", ")} currentPost={props.head.title} />
       <hr />
       <ReactDisqusThread
         shortname="gauravagarwalr"
