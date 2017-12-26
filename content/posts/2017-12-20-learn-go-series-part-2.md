@@ -156,7 +156,7 @@ func HashAndSalt(pwd string) string {
 
 # Conclusion
 
-We have built a simple way of storing new user information along with their password in a secure format. Gorm does a lot of things right.
+We have built a simple way of storing new user information along with their password in a secure format. Gorm does a lot of things right. And for the sake keeping this post short, I haven't dived deep into some of its [interesting aspects][GormAssociations]. You can see it in action in a [sample api][YAES-API] on [Github][YAES-Expense-API].
 
 # Caveats & Honorable mentions
 
@@ -168,5 +168,8 @@ Signing off for now. Please leave your thoughts and comments in the section belo
 [LearnGoPartI]: http://blog.gauravagarwalr.com/posts/2017-12-18-learn-go-series-part-1/
 [HashingSecurity]: https://crackstation.net/hashing-security.htm
 [CryptoSaltAndHash]: https://crypto.stackexchange.com/questions/1776/can-you-help-me-understand-what-a-cryptographic-salt-is
+[GormAssociations]: http://jinzhu.me/gorm/associations.html
+[YAES-API]: https://github.com/gauravagarwalr/Yet-Another-Expense-Splitter
+[YAES-Expense-API]: https://github.com/gauravagarwalr/Yet-Another-Expense-Splitter/blob/37340cf6154ea2485ede06becee401c735e13c96/swagger.yml#L87
 [ZeroValues]: https://tour.golang.org/basics/12
 [GoValidator]: https://github.com/go-validator/validator
