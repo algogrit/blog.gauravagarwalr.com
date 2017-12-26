@@ -1,7 +1,7 @@
 ---
 title: "Learn go series: Part II - Gorm up!"
 layout: Post
-date: 2017-12-20
+date: 2017-12-25
 tags: learn-go-series, go, api
 ---
 
