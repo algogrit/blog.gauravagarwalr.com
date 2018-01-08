@@ -80,6 +80,8 @@ func Instance() *gorm.DB {
 
 ```
 
+In the `InitializeDB` function we are connecting to the postgres database and we are migrating the app. We will be calling this from the `main` function of our app.
+
 # Tying it together - An API and crypted password
 
 With the user model defined and the db configured. All we have left to do is the api. Let's see how simple it is to do...
@@ -132,6 +134,8 @@ func RunServer(port string) {
   log.Fatal(http.ListenAndServe(":"+port, router))
 }
 ```
+
+`CreateUserHandler` as the name suggests, gets the users details from the request body and parses it using a `newUser` struct. We then instantiate the user and save it to the database. In case of any validation issues it sends back a string explaining the error as response with `422` - Unprocessable Entity error code.
 
 Pay close attention to `user.HashedPassword = model.HashAndSalt(newUser.Password)`. We haven't defined the function yet. Let's go back to `user.go` in `model` package and define it...
 
