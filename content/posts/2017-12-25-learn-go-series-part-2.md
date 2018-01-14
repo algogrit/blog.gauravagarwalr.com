@@ -5,7 +5,7 @@ date: 2017-12-25
 tags: learn-go-series, go, api
 ---
 
-This is a **Part 2** of "**Learn go**" series. You can find the previous post [here][LearnGoPartI].
+This is **Part 2** of "**Learn go**" series. You can find the previous post [here][LearnGoPartI].
 
 In this post, I will be walking you through an example of interacting with database. A very common scenario, creating a user. This post picks up from the [previous post][LearnGoPartI], so if you haven't read, please skim through it.
 

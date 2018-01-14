@@ -5,7 +5,7 @@ date: 2017-02-18
 tags: git, rebase
 ---
 
-So, me and Pavan (my colleague and friend at TarkaLabs) were discussing on how to handle the different scenarios he has faced while working with git. He would find himself in position where he isn't sure if he should do a `git merge` or `git rebase`. Sometimes he would do the other causing a state where the branch needs to be force pushed `git push -f`!
+So, me and Pavan (my colleague at TarkaLabs) were discussing on how to handle the different scenarios he has faced while working with git. He would find himself in position where he isn't sure if he should do a `git merge` or `git rebase`. Sometimes he would do the other causing a state where the branch needs to be force pushed `git push -f`!
 
 Below is a short excerpt from the conversation:
 
@@ -104,7 +104,7 @@ Below is a short excerpt from the conversation:
 
 `Pavan:` Ah! I see. So git now cannot identify RD1 and D1 as the same commits anymore. Rebase seems like a sure shot way of shooting yourself in the foot.
 
-`Me:` Well not precisely. We do perform a rebase operation each time we do a `git pull --rebase`. Here we are rebasing the `origin/{branch-name}` to `{branch-name}`. Git does it seemlessly for us. Moreover, as you have seen earlier this causes git to show conflicts only due to the code in our local branch. i.e.) the code which you wrote; making the whole process of conflict resolution simply to identify the changes which need to done to our code.
+`Me:` Well not precisely. We do perform a rebase operation each time we do a `git pull --rebase`. Here we are rebasing the `origin/{branch-name}` to `{branch-name}`. Git does it seemlessly for us. Moreover, as you have seen earlier this causes git to show conflicts only due to the code in our local branch. i.e.) the code which you wrote; making the whole process of conflict resolution simply to identify the changes which have been due to local code.
 
 
 `Pavan:` Oh yeah definitely. So rebase is good for local changes?
