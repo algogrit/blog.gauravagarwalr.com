@@ -7,7 +7,7 @@ tags: learn-go-series, go, organizing, project-structure
 
 This is **Part 4** of "**Learn go**" series. You can find the previous post [here][LearnGoPartIII].
 
-As a beginner to Golang, I was relatively painful to figure out an ideal project structure where code isn't dumped into one single file or package even. This post sums up my learnings to keep things simple.
+As a beginner to Golang, it was relatively painful to figure out an ideal project structure where code isn't dumped into one single file or package even. This post sums up my learnings to keep things simple.
 
 This post **does not** pick up from the previous posts [Part I][LearnGoPartI], [Part II][LearnGoPartII] and [Part III][LearnGoPartIII].
 
