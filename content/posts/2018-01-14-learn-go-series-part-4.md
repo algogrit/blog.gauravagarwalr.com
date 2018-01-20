@@ -7,9 +7,9 @@ tags: learn-go-series, go, organizing, project-structure
 
 This is **Part 4** of "**Learn go**" series. You can find the previous post [here][LearnGoPartIII].
 
-As a beginner to Golang, it was relatively painful to figure out an ideal project structure where code isn't dumped into one single file or package even. This post sums up my learnings to keep things simple.
+As a beginner to Golang, it was relatively painful to figure out an ideal project structure where code isn't dumped into one single file or package even. This post sums up my learnings to keep things simple by splitting project across multiple files and packages.
 
-This post **does not** pick up from the previous posts [Part I][LearnGoPartI], [Part II][LearnGoPartII] and [Part III][LearnGoPartIII].
+This post **does not** pick up from the previous posts [Part I][LearnGoPartI], [Part II][LearnGoPartII] and, [Part III][LearnGoPartIII].
 
 All of the code from this series can be found in [this repository][YAES-API].
 
@@ -85,7 +85,6 @@ This is as simple as it gets for API projects. If you have a much complex app, y
 # Caveats & Honorable mentions
 
   * Go doesn't allow for [cyclic dependencies][GoNuts]
-
 
 Signing off for now. As always, please leave your thoughts and comments in the section below.
 

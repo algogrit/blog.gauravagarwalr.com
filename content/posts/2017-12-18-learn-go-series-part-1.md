@@ -150,7 +150,6 @@ Now you can access:
   * [Gin][GinAutoReload] - To auto reload server during development. Not to be confused with gin web framework
   * Go expects all source code to be namespaced and located within $GOPATH/src directory. For eg: `https://github.com/gauravagarwalr/go-example` will be in `$GOPATH/src/github.com/gauravagarwalr/go-example`
 
-
 As always leave your thoughts in the comments section below. In the next post, I will be covering a go ORM called [`gorm`][Gorm].
 
 [TourOfGo]: https://tour.golang.org

@@ -9,13 +9,13 @@ Alternate title: Working with JWT, CORS as middlewares using Negroni.
 
 This is **Part 3** of "**Learn go**" series. You can find the previous post [here][LearnGoPartII].
 
-In this post, I will be walking you through an example of adding Middlewares for working with JWT for [sessions][Joepie91]. As well as making an API, CORS compatible. This post picks up from the previous posts [Part I][LearnGoPartI] and [Part II][LearnGoPartII], so if you haven't read, please skim through it.
+In this post, I will be walking you through an example of adding middlewares for working with JWT for [sessions][Joepie91]. As well as making an API, CORS compatible. This post picks up from the previous posts [Part I][LearnGoPartI] and, [Part II][LearnGoPartII], so if you haven't read, please skim through it.
 
 Let's begin...
 
 # Problem Statement
 
-We need an api where when we login, we get a JWT token back for authentication, similar in the manner to session cookies.
+We need an API where when we login, we get a JWT token back for authentication, similar in the manner to session cookies.
 
 # Creating the Login API
 
@@ -119,7 +119,7 @@ We are creating a new `Negroni` instance and passing it the jwtMiddleware's `Han
 
 # CORS
 
-We are almost done. Our API is almost functional. We run it, test it and it works fine. Then we hit the api from the UI on a different domain, and **BAM** it doesn't work. Bummer!
+We are almost done. Our API is almost functional. We run it, test it and it works fine. Then we hit the API from the UI on a different domain, and **BAM** it doesn't work. Bummer!
 
 Well, we forgot to enable [CORS][MozillaCORS] support to our server. Duh!
 
