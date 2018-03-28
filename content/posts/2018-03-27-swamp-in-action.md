@@ -1,8 +1,8 @@
 ---
 title: "Swamp in action - Finding relevant branches in git"
 layout: Post
-date: 2018-02-17
-tags: go, glide, dep, package-manager
+date: 2018-03-27
+tags: git, utility
 ---
 
 I had written a small script sometime in 2014 for me to separate out the stale branches from the most relevant branches in a git repository.
