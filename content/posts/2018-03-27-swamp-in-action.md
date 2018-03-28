@@ -11,13 +11,15 @@ Today, I was working on a bunch of repositories. I wanted to figure out the rece
 
 First, see the script in action:
 
-![Listing][ProjectStructGif]
+![Listing][SwampInActionGif]
 
 Alternatively, you can view it on [asciinema][AsciinemaLink].
 
 # Analysis
 
 Right off the bat, I can see that
+
+![Listing][SwampInActionPng]
 
 ### 4 branches are all merged into master (+0) already.
 
@@ -50,7 +52,7 @@ All right. Now I know which branch I want to branch off of.
 A quick and easy install is using this [gist][InstallSwampGist]:
 
 ```bash
-curl https://gist.github.com/gauravagarwalr/3fd5b9ca88dd08ec5f6ce4d5e2c4c719/raw/ | sh
+curl https://gist.githubusercontent.com/gauravagarwalr/3fd5b9ca88dd08ec5f6ce4d5e2c4c719/raw/ | sh
 ```
 
 The content of the install script is simply:
@@ -71,7 +73,8 @@ git swamp
 
 I hope you find it as useful as the fun I had in writing it.
 
-[ProjectStructGif]: /assets/gifs/02-swamp-in-action.gif
+[SwampInActionGif]: /assets/gifs/02-swamp-in-action.gif
+[SwampInActionPng]: /assets/images/02-swamp-in-action.png
 [AsciinemaLink]: https://asciinema.org/a/172856
 [GitNuke]: https://github.com/gauravagarwalr/Script-BackUp/blob/master/OS%20X/Custom-Git-Commands/git-nuke
 [GitBranchingModel]: http://nvie.com/posts/a-successful-git-branching-model/
