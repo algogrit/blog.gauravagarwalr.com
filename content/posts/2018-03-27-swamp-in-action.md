@@ -52,7 +52,7 @@ All right. Now I know which branch I want to branch off of.
 A quick and easy install is using this [gist][InstallSwampGist]:
 
 ```bash
-curl https://gist.githubusercontent.com/gauravagarwalr/3fd5b9ca88dd08ec5f6ce4d5e2c4c719/raw/ | sh
+curl https://gist.githubusercontent.com/gauravagarwalr/3fd5b9ca88dd08ec5f6ce4d5e2c4c719/raw | sh
 ```
 
 The content of the install script is simply:
@@ -61,7 +61,7 @@ The content of the install script is simply:
 #!/usr/bin/env bash
 
 mkdir -p /usr/local/bin
-curl -s https://raw.githubusercontent.com/gauravagarwalr/Script-BackUp/swamp-0.1/OS%20X/Custom-Git-Commands/git-swamp > /usr/local/bin/git-swamp
+curl -s https://raw.githubusercontent.com/gauravagarwalr/Script-BackUp/swamp-0.3/OS%20X/Custom-Git-Commands/git-swamp > /usr/local/bin/git-swamp
 chmod 744 /usr/local/bin/git-swamp
 ```
 
