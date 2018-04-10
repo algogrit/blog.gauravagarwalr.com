@@ -130,7 +130,11 @@ I am a huge fan of containerization. I have see a lot of projects messing up an 
   $ sudo apt-get install docker.io
 ```
 
-It is as simple as that from 'Ubuntu 16.04' and 'JetPack 3.2' onwards.
+It is as simple as that from 'Ubuntu 16.04' and 'JetPack 3.2' onwards. I haven't been able to find the `device_query` image which is referenced in [this forum][NvidiaDockerForum]. Let me know, if you were able to get the following command working:
+
+```bash
+  $ docker run --device=/dev/nvhost-ctrl --device=/dev/nvhost-ctrl-gpu --device=/dev/nvhost-prof-gpu --device=/dev/nvmap --device=/dev/nvhost-gpu --device=/dev/nvhost-as-gpu -v /usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra device_query
+```
 
 Hopefully, you have found this post useful. Please leave your comments and questions in the disqus thread below.
 
@@ -142,3 +146,4 @@ Hopefully, you have found this post useful. Please leave your comments and quest
 [WDSSD-Amazon.com]: https://www.amazon.com/gp/product/B01LXDQX35/ref=oh_aui_detailpage_o00_s00
 [SSDSetupVideo]: https://www.youtube.com/watch?v=6nzWt42mzqk
 [SSDFreeSpace]: https://superuser.com/questions/1256074/how-much-space-to-leave-free-on-hdd-or-ssd
+[NvidiaDockerForum]: https://devtalk.nvidia.com/default/topic/1017272/docker-on-tx1-or-tx2-/
