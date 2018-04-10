@@ -48,7 +48,7 @@ Hopefully, you found it simple to setup the Nvidia TX1 with Ubuntu 16.04. If you
 
 # Install SSD
 
-TX1 comes with a built in capacity of ~16 GB, out of which, the above installation takes about >8 GB. It leaves us with very little space to work with. One option was to install a SD card using the provided slot, I wanted much more. I wanted to run the OS on a ~256 GB SSD. You can follow the [video][SSDSetupVideo], or read along.
+TX1 comes with a built in capacity of ~16 GB, out of which, the above installation takes about >8 GB. It leaves us with very little space to work with. One option was to install a SD card using the provided slot, I wanted much more. I wanted to run the OS on a [~256 GB SSD][WDSSD-Amazon.com]. You can follow the [video][SSDSetupVideo], or read along.
 
 ## Format SSD and copy files to SSD
 
@@ -139,5 +139,6 @@ Hopefully, you have found this post useful. Please leave your comments and quest
 [UbuntuISO]: https://www.ubuntu.com/download/desktop/thank-you?version=16.04.4&architecture=amd64
 [flashTool]: https://github.com/hypriot/flash
 [JetPackDownload]: https://developer.nvidia.com/embedded/jetpack
+[WDSSD-Amazon.com]: https://www.amazon.com/gp/product/B01LXDQX35/ref=oh_aui_detailpage_o00_s00
 [SSDSetupVideo]: https://www.youtube.com/watch?v=6nzWt42mzqk
 [SSDFreeSpace]: https://superuser.com/questions/1256074/how-much-space-to-leave-free-on-hdd-or-ssd
