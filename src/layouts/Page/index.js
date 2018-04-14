@@ -48,6 +48,7 @@ const Page = (
     { name: "twitter:description", content: head.description },
     { name: "twitter:image", content: socialImage },
     { name: "description", content: head.description },
+    { name: "google-site-verification", content: "WIplXD9_AT1q-q7UzbwFRNsu1gOzfoJqXRHokqznM14" }
   ]
 
   return (
