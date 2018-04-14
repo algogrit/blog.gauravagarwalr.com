@@ -12,9 +12,7 @@
     "start": "phenomic start",
     "build": "phenomic build",
     "pretest": "npm run lint",
-    "test": "npm run build",
-    "predeploy": "npm run build",
-    "deploy": "./scripts/deploy.sh"
+    "test": "npm run build"
   },
   "phenomic": {
     "CNAME": true
