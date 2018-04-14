@@ -1,4 +1,6 @@
-# [Phenomic](https://github.com/MoOx/phenomic) phenomic-theme-base
+# Technical blog
+
+Built using [Phenomic](https://github.com/MoOx/phenomic) and using `phenomic-theme-base`.
 
 ## Install dependencies
 
@@ -16,10 +18,4 @@ npm start
 
 ```sh
 npm run build
-```
-
-## Deploy
-
-```sh
-npm run deploy
 ```
