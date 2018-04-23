@@ -1,8 +1,9 @@
 ---
 title: "Swamp in action - Finding relevant branches in git"
-layout: Post
-date: 2018-03-27
-tags: git, utility, multiple-branches
+canonicalUrl: https://blog.gauravagarwalr.com/posts/2018-03-27-swamp-in-action
+license: all-rights-reserved
+tags: git,utility,multiple-branches
+published: true
 ---
 
 I had written a small script sometime in 2014 for me to separate out the stale branches from the most relevant branches in a git repository.
