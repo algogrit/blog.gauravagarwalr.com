@@ -1,8 +1,9 @@
 ---
 title: "Learn go series: Part IV - Project Structuring"
-layout: Post
-date: 2018-01-14
-tags: learn-go-series, go, organizing, project-structure
+canonicalUrl: https://blog.gauravagarwalr.com/posts/2018-01-14-learn-go-series-part-4
+license: all-rights-reserved
+tags: learn-go-series,go,organizing,project-structure
+published: true
 ---
 
 This is **Part 4** of "**Learn go**" series. You can find the previous post [here][LearnGoPartIII].

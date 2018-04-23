@@ -1,8 +1,9 @@
 ---
 title: "Learn go series: Part V - Testing and API documentation"
-layout: Post
-date: 2018-01-21
-tags: learn-go-series, go, testing, api-docs, documentation
+canonicalUrl: https://blog.gauravagarwalr.com/posts/2018-01-21-learn-go-series-part-5
+license: all-rights-reserved
+tags: learn-go-series,go,testing,api-docs,documentation
+published: true
 ---
 
 This is **Part 5** of "**Learn go**" series. Probably the last in this series. You can find the previous post [here][LearnGoPartIV].

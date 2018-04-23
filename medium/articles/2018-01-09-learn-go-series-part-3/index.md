@@ -1,8 +1,9 @@
 ---
 title: "Learn go series: Part III - Stuck in the middle!"
-layout: Post
-date: 2018-01-09
-tags: learn-go-series, go, middleware, jwt, auth
+canonicalUrl: https://blog.gauravagarwalr.com/posts/2018-01-09-learn-go-series-part-3
+license: all-rights-reserved
+tags: learn-go-series,go,middleware,jwt,auth
+published: true
 ---
 
 Alternate title: Working with JWT, CORS as middlewares using Negroni.
@@ -127,8 +128,8 @@ Let's do this by using a simple [CORS package][CORSPackage].
 
 ### api.go
 ```golang
-  handler := cors.Default().Handler(router)
-  http.ListenAndServe(":"+8080, handler)
+handler := cors.Default().Handler(router)
+http.ListenAndServe(":"+8080, handler)
 ```
 
 We are wrapping our router with the default cors' `Handler`. We open up our browser and test again. And voila! Things work like a charm.
