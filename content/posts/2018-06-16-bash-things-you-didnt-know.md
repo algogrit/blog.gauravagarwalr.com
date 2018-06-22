@@ -13,3 +13,6 @@ So let's get on with...
 
 # Ghost in the shell
 
+How do your executables in bash get run without you specifying the full path to it? If I write a program with the same name will that get run? How? Why?
+
+Enter `$PATH` variable
