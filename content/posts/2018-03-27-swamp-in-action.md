@@ -13,7 +13,7 @@ First, see the script in action:
 
 ![Listing][SwampInActionGif]
 
-Alternatively, you can view it on [asciinema][AsciinemaLink].
+Alternatively, you can view it on [asciinema][SwampInActionGifAC].
 
 # Analysis
 
@@ -75,7 +75,7 @@ I hope you find it as useful as the fun I had in writing it.
 
 [SwampInActionGif]: https://blog.algogrit.com/assets/gifs/02-swamp-in-action.gif
 [SwampInActionPng]: https://blog.algogrit.com/assets/images/02-swamp-in-action.png
-[AsciinemaLink]: https://asciinema.org/a/172856
+[SwampInActionGifAC]: https://asciinema.org/a/172856
 [GitNuke]: https://github.com/algogrit/Script-BackUp/blob/master/OS%20X/Custom-Git-Commands/git-nuke
 [GitBranchingModel]: http://nvie.com/posts/a-successful-git-branching-model/
 [InstallSwampGist]: https://gist.github.com/algogrit/3fd5b9ca88dd08ec5f6ce4d5e2c4c719
