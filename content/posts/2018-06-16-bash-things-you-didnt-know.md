@@ -41,9 +41,15 @@ All the executables in all of the directories in the `PATH` environment variable
 
   > When a command name is specified by the user or an exec call is made from a program, the system searches through $PATH, examining each directory from left to right in the list, looking for a filename that matches the command name. Once found, the program is executed as a child process of the command shell or program that issued the command.[<sup>2</sup>][PATH_Behavior]
 
-This simply means that the first directory gets executed.
+This simply means that the command in the first directory gets executed.
+
+This brings us to...
+
+## Wrapping your head around wrapping executables
+
+
 
 [PATH_Definition]: https://kb.iu.edu/d/acar
-[BashPATHGif]: /assets/gifs/03-bash-paths.gif
+[BashPATHGif]: https://blog.gauravagarwalr.com/assets/gifs/03-bash-paths.gif
 [BashPathGifAC]: https://asciinema.org/a/iOnUcPLwGtKHeoDOGLnmpTl1G
 [PATH_Behavior]: https://en.wikipedia.org/wiki/PATH_(variable)#Unix_and_Unix-like
