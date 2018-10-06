@@ -1,6 +1,6 @@
 ---
 title: "Learn go series: Part III - Stuck in the middle!"
-canonicalUrl: https://blog.gauravagarwalr.com/posts/2018-01-09-learn-go-series-part-3
+canonicalUrl: https://blog.algogrit.com/posts/2018-01-09-learn-go-series-part-3
 license: all-rights-reserved
 tags: learn-go-series,go,middleware,jwt,auth
 published: true
@@ -146,8 +146,8 @@ We are wrapping our router with the default cors' `Handler`. We open up our brow
 
 Signing off for now. As always, please leave your thoughts and comments in the section below.
 
-[LearnGoPartI]: https://blog.gauravagarwalr.com/posts/2017-12-18-learn-go-series-part-1/
-[LearnGoPartII]: https://blog.gauravagarwalr.com/posts/2017-12-25-learn-go-series-part-2/
+[LearnGoPartI]: https://blog.algogrit.com/posts/2017-12-18-learn-go-series-part-1/
+[LearnGoPartII]: https://blog.algogrit.com/posts/2017-12-25-learn-go-series-part-2/
 [bcrypt]: https://godoc.org/golang.org/x/crypto/bcrypt
 [JWT-Go]: https://github.com/dgrijalva/jwt-go
 [Auth0Middleware]: https://github.com/auth0/go-jwt-middleware

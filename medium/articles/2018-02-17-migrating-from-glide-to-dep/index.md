@@ -1,6 +1,6 @@
 ---
 title: "Migrating from glide to dep: Golang"
-canonicalUrl: https://blog.gauravagarwalr.com/posts/2018-02-17-migrating-from-glide-to-dep
+canonicalUrl: https://blog.algogrit.com/posts/2018-02-17-migrating-from-glide-to-dep
 license: all-rights-reserved
 tags: go,glide,dep,package-manager
 published: true
@@ -44,7 +44,7 @@ In an existing project, with dependencies managed by glide, an easy way to switc
     Using master as constraint for direct dep github.com/auth0/go-jwt-middleware
     Locking in master (5493cab) for direct dep github.com/auth0/go-jwt-middleware
     Locking in master (136a25c) for transitive dep golang.org/x/net
-  Old vendor backed up to /Users/gaurav/.goenv/src/github.com/gauravagarwalr/Yet-Another-Expense-Splitter/_vendor-20180217215249
+  Old vendor backed up to /Users/gaurav/.goenv/src/github.com/algogrit/Yet-Another-Expense-Splitter/_vendor-20180217215249
 ```
 
 This creates a couple of new files and a backup of the vendor directory.

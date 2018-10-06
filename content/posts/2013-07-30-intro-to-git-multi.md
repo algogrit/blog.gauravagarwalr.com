@@ -22,14 +22,14 @@ Are all supported commands, which will first list out all the git managed repos 
 For a __simple installation__, run:
 
 ```bash
- $ curl https://gist.github.com/gauravagarwalr/6080309/raw/0d5fe1455df13be1d7a667a9ecccf7fd13d4f0b3/install_git-multi.sh | sh
+ $ curl https://gist.github.com/algogrit/6080309/raw/0d5fe1455df13be1d7a667a9ecccf7fd13d4f0b3/install_git-multi.sh | sh
 ```
 
 To manually do the above installation, you can follow the below steps:
 
 ```bash
  $ mkdir -p ~/bin
- $ curl https://raw.github.com/gauravagarwalr/Script-BackUp/master/OS%20X/Custom-Git-Commands/git-multi > ~/bin/git-multi
+ $ curl https://raw.github.com/algogrit/Script-BackUp/master/OS%20X/Custom-Git-Commands/git-multi > ~/bin/git-multi
  $ chmod 744 ~/bin/git-multi
 ```
 
@@ -46,4 +46,4 @@ Of course, there is a built-in help to the command, which you can get lesser inf
 
 The code is currently being managed [here][github]. I guess at some point in time I would be moving it out of the current repo, and give it a proper repo, along with the other shell utils.
 
-[github]: https://github.com/gauravagarwalr/Script-BackUp/blob/master/OS%20X/Custom-Git-Commands/git-multi
+[github]: https://github.com/algogrit/Script-BackUp/blob/master/OS%20X/Custom-Git-Commands/git-multi

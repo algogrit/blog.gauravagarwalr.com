@@ -1,6 +1,6 @@
 ---
 title: "Bootstrap.sh Pattern"
-canonicalUrl: https://blog.gauravagarwalr.com/posts/2013-12-06-bootstrap.sh-pattern/
+canonicalUrl: https://blog.algogrit.com/posts/2013-12-06-bootstrap.sh-pattern/
 license: all-rights-reserved
 tags: setup, devops, utility
 publishStatus: draft

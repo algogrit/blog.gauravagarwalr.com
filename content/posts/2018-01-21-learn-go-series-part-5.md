@@ -71,8 +71,8 @@ package api_test
 import (
   "testing"
 
-  api "github.com/gauravagarwalr/Yet-Another-Expense-Splitter/src/api"
-  db "github.com/gauravagarwalr/Yet-Another-Expense-Splitter/src/config/db"
+  api "github.com/algogrit/Yet-Another-Expense-Splitter/src/api"
+  db "github.com/algogrit/Yet-Another-Expense-Splitter/src/config/db"
   . "github.com/onsi/ginkgo"
   . "github.com/onsi/gomega"
 )
@@ -113,7 +113,7 @@ import (
   "net/http"
   "net/http/httptest"
 
-  "github.com/gauravagarwalr/Yet-Another-Expense-Splitter/src/api"
+  "github.com/algogrit/Yet-Another-Expense-Splitter/src/api"
   . "github.com/onsi/ginkgo"
   . "github.com/onsi/gomega"
 )
@@ -139,7 +139,7 @@ When we run this, we should get the following output.
 
 ```bash
 $ GO_APP_ENV="test" go test -v ./...
-?     github.com/gauravagarwalr/Yet-Another-Expense-Splitter  [no test files]
+?     github.com/algogrit/Yet-Another-Expense-Splitter  [no test files]
 === RUN   TestAPI
 Running Suite: API Suite
 ========================
@@ -151,9 +151,9 @@ Will run 1 of 1 specs
 Ran 1 of 1 Specs in 0.135 seconds
 SUCCESS! -- 1 Passed | 0 Failed | 0 Pending | 0 Skipped --- PASS: TestAPI (0.14s)
 PASS
-ok    github.com/gauravagarwalr/Yet-Another-Expense-Splitter/src/api  0.175s
-?     github.com/gauravagarwalr/Yet-Another-Expense-Splitter/src/config/db  [no test files]
-?     github.com/gauravagarwalr/Yet-Another-Expense-Splitter/src/models [no test files]
+ok    github.com/algogrit/Yet-Another-Expense-Splitter/src/api  0.175s
+?     github.com/algogrit/Yet-Another-Expense-Splitter/src/config/db  [no test files]
+?     github.com/algogrit/Yet-Another-Expense-Splitter/src/models [no test files]
 ```
 
 The test case passes successfully. Now feel free to add more test cases and send in [PR][YAES-API-Latest].
@@ -191,20 +191,20 @@ Oh also you can [split][Azimi.me] the swagger.yml into multiple files.
 
 Signing off for now. As always, please leave your thoughts and comments in the section below.
 
-[LearnGoPartI]: https://blog.gauravagarwalr.com/posts/2017-12-18-learn-go-series-part-1/
-[LearnGoPartII]: https://blog.gauravagarwalr.com/posts/2017-12-25-learn-go-series-part-2/
-[LearnGoPartIII]: https://blog.gauravagarwalr.com/posts/2018-01-09-learn-go-series-part-3/
-[LearnGoPartIV]: https://blog.gauravagarwalr.com/posts/2018-01-14-learn-go-series-part-4/
+[LearnGoPartI]: https://blog.algogrit.com/posts/2017-12-18-learn-go-series-part-1/
+[LearnGoPartII]: https://blog.algogrit.com/posts/2017-12-25-learn-go-series-part-2/
+[LearnGoPartIII]: https://blog.algogrit.com/posts/2018-01-09-learn-go-series-part-3/
+[LearnGoPartIV]: https://blog.algogrit.com/posts/2018-01-14-learn-go-series-part-4/
 [Rspec]: http://rspec.info/
 [xUnit]: https://en.wikipedia.org/wiki/XUnit
 [TestingPackage]: https://golang.org/pkg/testing/
 [IntroducingBDD]: https://dannorth.net/introducing-bdd/
 [Ginkgo]: https://github.com/onsi/ginkgo
 [Gomega]: https://github.com/onsi/gomega
-[YAES-API]: https://github.com/gauravagarwalr/Yet-Another-Expense-Splitter/tree/6af8c4d6fbf0e50f529dd3687242df53f21fc684
-[YAES-API-Latest]: https://github.com/gauravagarwalr/Yet-Another-Expense-Splitter
+[YAES-API]: https://github.com/algogrit/Yet-Another-Expense-Splitter/tree/6af8c4d6fbf0e50f529dd3687242df53f21fc684
+[YAES-API-Latest]: https://github.com/algogrit/Yet-Another-Expense-Splitter
 [APIBlueprint]: https://apiblueprint.org/
 [SwaggerExamples]: https://github.com/go-swagger/go-swagger/tree/master/examples
-[APIDocsImage]: https://blog.gauravagarwalr.com/assets/images/01-learn-go-series-part-5.png
+[APIDocsImage]: https://blog.algogrit.com/assets/images/01-learn-go-series-part-5.png
 [Azimi.me]: http://azimi.me/2015/07/16/split-swagger-into-smaller-files.html
 [DaveCheney]: https://dave.cheney.net/2013/06/30/how-to-write-benchmarks-in-go

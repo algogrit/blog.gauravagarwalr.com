@@ -34,7 +34,7 @@ const Post = (props) => {
       <RelatedPosts relatedTags={pageTag.split(", ")} currentPost={props.head.title} />
       <hr />
       <ReactDisqusThread
-        shortname="gauravagarwalr"
+        shortname="algogrit"
         identifier={md5(props.head.title)}
         title={props.head.title}/>
       <hr />

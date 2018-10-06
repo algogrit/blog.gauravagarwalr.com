@@ -1,6 +1,6 @@
 ---
 title: "Learn go series: Part I - Hello World as a service"
-canonicalUrl: https://blog.gauravagarwalr.com/posts/2017-12-18-learn-go-series-part-1
+canonicalUrl: https://blog.algogrit.com/posts/2017-12-18-learn-go-series-part-1
 license: all-rights-reserved
 tags: learn-go-series,go,api
 published: true
@@ -149,7 +149,7 @@ $ curl http://localhost:8080/hello/Gaurav # {"hello": "Gaurav"}
 
   * [Glide][GlidePackage] - Go Package Manager
   * [Gin][GinAutoReload] - To auto reload server during development. Not to be confused with gin web framework
-  * Go expects all source code to be namespaced and located within $GOPATH/src directory. For eg: `https://github.com/gauravagarwalr/go-example` will be in `$GOPATH/src/github.com/gauravagarwalr/go-example`
+  * Go expects all source code to be namespaced and located within $GOPATH/src directory. For eg: `https://github.com/algogrit/go-example` will be in `$GOPATH/src/github.com/algogrit/go-example`
 
 As always leave your thoughts in the comments section below. In the next post, I will be covering a go ORM called [`gorm`][Gorm].
 

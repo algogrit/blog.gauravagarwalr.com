@@ -1,6 +1,6 @@
 ---
 title: "To rebase or not to rebase?"
-canonicalUrl: https://blog.gauravagarwalr.com/posts/2017-02-18-to-rebase-or-not-to-rebase
+canonicalUrl: https://blog.algogrit.com/posts/2017-02-18-to-rebase-or-not-to-rebase
 license: all-rights-reserved
 tags: git,rebase
 published: true

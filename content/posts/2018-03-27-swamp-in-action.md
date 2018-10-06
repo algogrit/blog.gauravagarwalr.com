@@ -52,7 +52,7 @@ All right. Now I know which branch I want to branch off of.
 A quick and easy install is using this [gist][InstallSwampGist]:
 
 ```bash
-curl https://gist.githubusercontent.com/gauravagarwalr/3fd5b9ca88dd08ec5f6ce4d5e2c4c719/raw | sh
+curl https://gist.githubusercontent.com/algogrit/3fd5b9ca88dd08ec5f6ce4d5e2c4c719/raw | sh
 ```
 
 The content of the install script is simply:
@@ -61,7 +61,7 @@ The content of the install script is simply:
 #!/usr/bin/env bash
 
 mkdir -p /usr/local/bin
-curl -s https://raw.githubusercontent.com/gauravagarwalr/Script-BackUp/swamp-0.3/OS%20X/Custom-Git-Commands/git-swamp > /usr/local/bin/git-swamp
+curl -s https://raw.githubusercontent.com/algogrit/Script-BackUp/swamp-0.3/OS%20X/Custom-Git-Commands/git-swamp > /usr/local/bin/git-swamp
 chmod 744 /usr/local/bin/git-swamp
 ```
 
@@ -73,9 +73,9 @@ git swamp
 
 I hope you find it as useful as the fun I had in writing it.
 
-[SwampInActionGif]: https://blog.gauravagarwalr.com/assets/gifs/02-swamp-in-action.gif
-[SwampInActionPng]: https://blog.gauravagarwalr.com/assets/images/02-swamp-in-action.png
+[SwampInActionGif]: https://blog.algogrit.com/assets/gifs/02-swamp-in-action.gif
+[SwampInActionPng]: https://blog.algogrit.com/assets/images/02-swamp-in-action.png
 [AsciinemaLink]: https://asciinema.org/a/172856
-[GitNuke]: https://github.com/gauravagarwalr/Script-BackUp/blob/master/OS%20X/Custom-Git-Commands/git-nuke
+[GitNuke]: https://github.com/algogrit/Script-BackUp/blob/master/OS%20X/Custom-Git-Commands/git-nuke
 [GitBranchingModel]: http://nvie.com/posts/a-successful-git-branching-model/
-[InstallSwampGist]: https://gist.github.com/gauravagarwalr/3fd5b9ca88dd08ec5f6ce4d5e2c4c719
+[InstallSwampGist]: https://gist.github.com/algogrit/3fd5b9ca88dd08ec5f6ce4d5e2c4c719

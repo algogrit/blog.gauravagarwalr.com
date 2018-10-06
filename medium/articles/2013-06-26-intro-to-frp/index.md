@@ -1,6 +1,6 @@
 ---
 title: Introduction to Functional Reactive Programming
-canonicalUrl: https://blog.gauravagarwalr.com/posts/2013-06-26-intro-to-frp/
+canonicalUrl: https://blog.algogrit.com/posts/2013-06-26-intro-to-frp/
 license: all-rights-reserved
 tags: frp
 publishStatus: draft

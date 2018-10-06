@@ -53,7 +53,7 @@ import (
   "github.com/jinzhu/gorm"
   _ "github.com/jinzhu/gorm/dialects/postgres"
 
-  model "github.com/gauravagarwalr/go-example/src/models"
+  model "github.com/algogrit/go-example/src/models"
 )
 
 var dbInstance *gorm.DB
@@ -95,8 +95,8 @@ import (
   "encoding/json"
   "net/http"
 
-  db "github.com/gauravagarwalr/go-example/src/config/db"
-  model "github.com/gauravagarwalr/go-example/src/models"
+  db "github.com/algogrit/go-example/src/config/db"
+  model "github.com/algogrit/go-example/src/models"
 )
 
 type newUser struct {
@@ -169,11 +169,11 @@ We have built a simple way of storing new user information along with their pass
 
 Signing off for now. Please leave your thoughts and comments in the section below.
 
-[LearnGoPartI]: https://blog.gauravagarwalr.com/posts/2017-12-18-learn-go-series-part-1/
+[LearnGoPartI]: https://blog.algogrit.com/posts/2017-12-18-learn-go-series-part-1/
 [HashingSecurity]: https://crackstation.net/hashing-security.htm
 [CryptoSaltAndHash]: https://crypto.stackexchange.com/questions/1776/can-you-help-me-understand-what-a-cryptographic-salt-is
 [GormAssociations]: http://jinzhu.me/gorm/associations.html
-[YAES-API]: https://github.com/gauravagarwalr/Yet-Another-Expense-Splitter
-[YAES-Expense-API]: https://github.com/gauravagarwalr/Yet-Another-Expense-Splitter/blob/37340cf6154ea2485ede06becee401c735e13c96/swagger.yml#L87
+[YAES-API]: https://github.com/algogrit/Yet-Another-Expense-Splitter
+[YAES-Expense-API]: https://github.com/algogrit/Yet-Another-Expense-Splitter/blob/37340cf6154ea2485ede06becee401c735e13c96/swagger.yml#L87
 [ZeroValues]: https://tour.golang.org/basics/12
 [GoValidator]: https://github.com/go-validator/validator

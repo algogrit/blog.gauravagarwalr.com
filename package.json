@@ -1,10 +1,10 @@
 {
   "private": true,
   "name": "blog",
-  "homepage": "https://blog.gauravagarwalr.com",
-  "twitter": "gauravagarwalr",
-  "repository": "git@github.com:gauravagarwalr/gauravagarwalr.github.io.git",
-  "github": "https://github.com/gauravagarwalr",
+  "homepage": "https://blog.algogrit.com",
+  "twitter": "algogrit",
+  "repository": "git@github.com:algogrit/algogrit.github.io.git",
+  "github": "https://github.com/algogrit",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
     "lint:css": "stylelint \"src/**/*.css\"",

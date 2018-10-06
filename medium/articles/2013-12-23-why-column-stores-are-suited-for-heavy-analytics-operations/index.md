@@ -1,6 +1,6 @@
 ---
 title: "Why Column Stores are suited for Heavy Analytics Operations"
-canonicalUrl: https://blog.gauravagarwalr.com/posts/2013-12-23-why-column-stores-are-suited-for-heavy-analytics-operations/
+canonicalUrl: https://blog.algogrit.com/posts/2013-12-23-why-column-stores-are-suited-for-heavy-analytics-operations/
 license: all-rights-reserved
 tags: db,column-store
 published: true

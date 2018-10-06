@@ -1,8 +1,8 @@
 ---
 title: "Setting up Nvidia TX1 Dev board with JetPack 3.2 and SSD with a bonus"
-canonicalUrl: https://blog.gauravagarwalr.com/posts/2018-04-10-setting-up-nvidia-tx1
+canonicalUrl: https://blog.algogrit.com/posts/2018-04-10-setting-up-nvidia-tx1
 license: all-rights-reserved
-featuredImage: https://blog.gauravagarwalr.com/assets/images/03-setup-nvidia-tx1.jpg
+featuredImage: https://blog.algogrit.com/assets/images/03-setup-nvidia-tx1.jpg
 tags: nvidia-tx1,dev-board,tinkering,jetpack,docker
 published: true
 ---

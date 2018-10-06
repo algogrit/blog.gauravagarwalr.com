@@ -1,6 +1,6 @@
 ---
 title: "Learn go series: Part IV - Project Structuring"
-canonicalUrl: https://blog.gauravagarwalr.com/posts/2018-01-14-learn-go-series-part-4
+canonicalUrl: https://blog.algogrit.com/posts/2018-01-14-learn-go-series-part-4
 license: all-rights-reserved
 tags: learn-go-series,go,organizing,project-structure
 published: true
@@ -67,9 +67,9 @@ All of the packages can be imported except main as follows:
 
 ```golang
 import {
-  api "github.com/gauravagarwalr/Yet-Another-Expense-Splitter/src/api"
-  db "github.com/gauravagarwalr/Yet-Another-Expense-Splitter/src/config/db"
-  model "github.com/gauravagarwalr/Yet-Another-Expense-Splitter/src/models"
+  api "github.com/algogrit/Yet-Another-Expense-Splitter/src/api"
+  db "github.com/algogrit/Yet-Another-Expense-Splitter/src/config/db"
+  model "github.com/algogrit/Yet-Another-Expense-Splitter/src/models"
 }
 ```
 
@@ -89,10 +89,10 @@ This is as simple as it gets for API projects. If you have a much complex app, y
 
 Signing off for now. As always, please leave your thoughts and comments in the section below.
 
-[LearnGoPartI]: https://blog.gauravagarwalr.com/posts/2017-12-18-learn-go-series-part-1/
-[LearnGoPartII]: https://blog.gauravagarwalr.com/posts/2017-12-25-learn-go-series-part-2/
-[LearnGoPartIII]: https://blog.gauravagarwalr.com/posts/2018-01-09-learn-go-series-part-3/
-[YAES-API]: https://github.com/gauravagarwalr/Yet-Another-Expense-Splitter/tree/099362c706f78601d9c70642234c143fc7beac3f
-[ProjectStructGif]: https://blog.gauravagarwalr.com/assets/gifs/01-learn-go-series-part-4.gif
+[LearnGoPartI]: https://blog.algogrit.com/posts/2017-12-18-learn-go-series-part-1/
+[LearnGoPartII]: https://blog.algogrit.com/posts/2017-12-25-learn-go-series-part-2/
+[LearnGoPartIII]: https://blog.algogrit.com/posts/2018-01-09-learn-go-series-part-3/
+[YAES-API]: https://github.com/algogrit/Yet-Another-Expense-Splitter/tree/099362c706f78601d9c70642234c143fc7beac3f
+[ProjectStructGif]: https://blog.algogrit.com/assets/gifs/01-learn-go-series-part-4.gif
 [AsciinemaLink]: https://asciinema.org/a/zwDQYHxeb5jQR03wvwAJUD91a
 [GoNuts]: http://grokbase.com/t/gg/golang-nuts/144g9tepvf/go-nuts-why-import-cycle-not-allowed

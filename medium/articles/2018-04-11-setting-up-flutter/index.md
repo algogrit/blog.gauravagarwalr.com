@@ -1,6 +1,6 @@
 ---
 title: "Setting up Flutter - Google's cross-platform native app development framework"
-canonicalUrl: https://blog.gauravagarwalr.com/posts/2018-04-11-setting-up-flutter
+canonicalUrl: https://blog.algogrit.com/posts/2018-04-11-setting-up-flutter
 license: all-rights-reserved
 tags: flutter,native-apps,cross-platform,mobile,ios,android,dart
 published: true
