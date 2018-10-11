@@ -8,7 +8,7 @@ tags: life, software-engineering, goals, plans, passion
 
 About a week back was my last day at [Tarka Labs](https://tarkalabs.com). So many people have asked me why I have left a wonderful organization, this post is to gather and summarize my thought process...
 
-A little about me, my name is Gaurav Agarwal. I was born [10019](http://www.howlongagogo.com/date/1991/may/7) days ago, as on the day of publishing this article, and I have no idea how many more are to come. I have an extremely blessed life and am thankful for the all the stars that aligned to bring me to this world. I have found technology and business to be my calling ever since I was a child. Make no mistake, I wasn't a child prodigy in any way, just a curious soul - got my first computer at the age of 9, used it to experience video games and sometimes make presentations for school and for fun. I also ran small honest businesses since I was 11.
+A little about me, my name is Gaurav Agarwal. I was born [10019](http://www.howlongagogo.com/date/1991/may/7) days ago, as on the day of publishing this article, and I have no idea how many more are to come. I have an extremely blessed life and am thankful for all the stars that aligned to bring me to this world. I have found technology and business to be my calling ever since I was a child. Make no mistake, I wasn't a child prodigy in any way, just a curious soul - got my first computer at the age of 9, used it to experience video games and sometimes make presentations for school and for fun. I also ran small honest businesses since I was 11.
 
 # Guiding Principles
 
@@ -31,7 +31,7 @@ Once you stop working you make no more money. Of course you can increase 'Y' by 
 
 ### What are examples of non-linear growth then ?
 
-Investing is the first thing which comes to mind. It could be summarised in a tweet by Jon Yongfook.
+Investing is the first thing which comes to mind. It could be summarised in a tweet by Jon Yongfook ([@yongfook](https://twitter.com/yongfook)).
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">A typical millionaire has around 7 sources of income. <br><br>1. Salary<br>2. Profit from business<br>3. Interest<br>4. Dividends<br>5. Rental income<br>6. Capital gains<br>7. Royalties<br><br>How diversified are you?</p>&mdash; Jon Yongfook (@yongfook) <a href="https://twitter.com/yongfook/status/1044138772772741121?ref_src=twsrc%5Etfw">September 24, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -48,7 +48,7 @@ Growth in terms of learning means keeping your cup empty, taking life as it come
 
 This is something which is a hit-or-miss when it comes to consulting or working in a traditional job. Sometimes all you want to do is solve interesting problems and then deal with the crud work. With consulting, being dependent on every client to bring interesting challenges all the time is delusional.
 
-I find consulting > salaried job cause it gives me a greater freedom and flexibility it terms of saying no and walking away from a project which is doing downhill. I especially lose interest when some false assumptions are made:
+I find consulting > salaried job cause it gives me a greater freedom and flexibility it terms of saying no and walking away from a project which is going downhill. I especially lose interest when some false assumptions are made:
 
   - All requirements have been nailed down from the beginning, and all we have to do is build it (Unicorn)
   - Building without any real world feedback (Read: no customers or real stakeholders)
@@ -109,7 +109,9 @@ I also realise giving at the expense of me time and personal time is risking too
 
 ## Maximize the enjoyment out of life (without compromising on any of your principles)
 
-By diversifying my experiences and varying them enough, I might make my ['Box of daily experience'](https://medium.com/personal-growth/travel-is-no-cure-for-the-mind-e449d3109d71) rich and full of zeal. Of course, novelty just for the sake of novelty isn't a worthwhile experience.
+By diversifying my experiences and varying them enough, I might make my ['Box of daily experience'](https://medium.com/personal-growth/travel-is-no-cure-for-the-mind-e449d3109d71) rich and full of zeal.
+
+Of course, novelty just for the sake of novelty isn't a worthwhile endeavor. I have been there done that, FOMO shouldn't be an issue. Neither the pursuit of a hedonist lifestyle.
 
 # Steps/challenges/experiments I am planning to take on in the next 2 years
 
