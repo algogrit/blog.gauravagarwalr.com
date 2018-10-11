@@ -2,7 +2,6 @@
 title: "Starting a new chapter..."
 layout: Post
 date: 2018-10-11
-draft-dated: 2018-10-04
 tags: life, software-engineering, goals, plans, passion
 ---
 
