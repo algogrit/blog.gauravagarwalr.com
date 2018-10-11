@@ -111,7 +111,7 @@ I also realise giving at the expense of me time and personal time is risking too
 
 By diversifying my experiences and varying them enough, I might make my ['Box of daily experience'](https://medium.com/personal-growth/travel-is-no-cure-for-the-mind-e449d3109d71) rich and full of zeal.
 
-Of course, novelty just for the sake of novelty isn't a worthwhile endeavor. I have been there done that, FOMO shouldn't be an issue. Neither the pursuit of a hedonist lifestyle.
+Of course, novelty just for the sake of novelty isn't a worthwhile endeavour. I have been there done that, FOMO shouldn't be an issue. Neither the pursuit of a hedonist lifestyle.
 
 # Steps/challenges/experiments I am planning to take on in the next 2 years
 
@@ -125,7 +125,7 @@ Of course, novelty just for the sake of novelty isn't a worthwhile endeavor. I h
 
 - Figure out avenues, training programs, sessions both online and offline which can help in sharing and bringing forth the untapped potential locally.
 
-- Build several toy programs and games, like YAES and Chain Reaction, as completely open source, for the explicit purpose to learn and as a means to share my learning. Most of the development will be recorded and streamed, so that anyone wanting to hack on it together can join and talk about. This would serve 2 purposes, one to kill the aspect of isolation which would happen working alone; the second is being able to watch other people code along and think has always been a great learning experience. I have always been a heavy proponent of Pair Programming.
+- Build several toy programs and games, like YAES and Chain Reaction, as completely open source, for the explicit purpose to learn and as a means to share my learning. Most of the development will be recorded and streamed, so that anyone wanting to hack on it together can join and talk about. This would serve 2 purposes, one to kill the aspect of isolation which would happen working alone; the second is being able to watch other people code along and think, has always been a great learning experience. I have always been a heavy proponent of Pair Programming.
 
 - Talks and presentations! Talk more and meet more people in the industry, you may never know who is excited about the same ideas as you. Rust, Go and FRP community in Chennai are still in infancy just like the languages, there is still a lot of room for them to grow.
 
@@ -137,7 +137,7 @@ Of course, novelty just for the sake of novelty isn't a worthwhile endeavor. I h
 
 - Most importantly, being as honest, open and humble while doing all of the above stuff. There are no hidden agendas, no ulterior motives. Being as naked and vulnerable as possible, come what may!
 
-I hope I will have positive things to report back at the end of these experiments. These are my thought process, promises, hopes and dreams for the next 2 years of my life. Please post your comments, questions and concerns in the comment section below or @algorit me on twitter. Thank you for reading!
+I hope I will have positive things to report back at the end of these experiments. These are my thought process, promises, hopes and dreams for the next 2 years of my life. Please post your comments, questions and concerns in the comment section below or DM me on twitter ([@algogrit](https://twitter.com/algogrit)). Thank you for reading!
 
 # Bibliography
 
