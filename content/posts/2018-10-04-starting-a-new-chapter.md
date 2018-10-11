@@ -72,7 +72,7 @@ To be able to build something useful, you either [disrupt industries](https://ww
 
 ### Shipping too late
 
-Perfection is a virtue only if applied to craftsmanship in moderation. Being embarrassed about what you have build is a common feeling among artists and makers. We hold ourselves to a higher standard than required while judging our work.
+Perfection is a virtue only if applied to craftsmanship in moderation. Being embarrassed about what you have built is a common feeling among artists and makers. We hold ourselves to a higher standard than required while judging our work.
 
 Anecdotally, it's only when I embrace my work with it's flaws and put it out in the world, will I ever get real feedback. This doesn't mean put things which are broken, that's a surefire way to lose credibility quickly.
 
