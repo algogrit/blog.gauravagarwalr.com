@@ -76,7 +76,7 @@ Perfection is a virtue only if applied to craftsmanship in moderation. Being emb
 
 Anecdotally, it's only when I embrace my work with it's flaws and put it out in the world, will I ever get real feedback. This doesn't mean put things which are broken, that's a surefire way to lose credibility quickly.
 
-What you need to do instead is build something which works even though all its sub-features haven't been been fleshed out can be useful. Focus on providing value, versus building something perfect. Perfection can come as a result of polishing your work. After you grind away the rough edges and smoothen out the surface of your product. But even then, with software a final product is always a moving target.
+What you need to do instead is build something which works, but isn't feature rich, can still be useful. Focus on providing value, versus building something perfect. Perfection can come as a result of polishing your work. After you grind away the rough edges and smoothen out the surface of your product. But even then, with software a final product is always a moving target.
 
 Once the [rubber hits the road](https://news.ycombinator.com/item?id=14945816), new use cases are discovered. Without observing how the software interacts with the user, we end up building a robotic solution which is only capable of interacting with other robotic systems. Treating humans as mere systems, and not as complex organisms with different tastes and sensibilities will lead to solutions which are way more complicated and unrealistic in their use cases than ever intended.<sup>[1](https://www.goodreads.com/book/show/10127019-the-lean-startup)</sup>
 
@@ -90,7 +90,7 @@ As a generalist, building such software becomes easier when there is enough room
 
 </div>
 
-Taking all these above points into consideration and keeping the ever-changing wide technological landscape there is no reasonable way for one single human to [stay relevant](https://en.wikipedia.org/wiki/Red_Queen_hypothesis), alone!
+Taking all these above points into consideration and keeping the ever-changing wide technological landscape in perspective, there is no reasonable way for one single human to [stay relevant](https://en.wikipedia.org/wiki/Red_Queen_hypothesis), alone!
 
 We are social creatures not by design but through selection. We adapt and overcome challenges as a tribe and as a species. We get to enjoy this only through learning and sharing with each other.
 
