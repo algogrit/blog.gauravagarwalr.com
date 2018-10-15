@@ -112,7 +112,7 @@ By diversifying my experiences and varying them enough, I might make my ['Box of
 
 Of course, novelty just for the sake of novelty isn't a worthwhile endeavour. I have been there done that, FOMO shouldn't be an issue. Neither the pursuit of a hedonist lifestyle.
 
-# Steps/challenges/experiments I am planning to take on in the next 2 years
+# Steps / challenges / experiments I am planning to take on in the next 2 years
 
 - Bring mithaibhai.com to life as a commercial entity in the next month or so... This is something which I have been intending to do since 2014.
 
