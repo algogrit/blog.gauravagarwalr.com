@@ -19,3 +19,22 @@ npm start
 ```sh
 npm run build
 ```
+
+# Publishing to medium
+
+Uses [medium-cli][medium-cli], to publish.
+
+## Install
+
+    $ npm install -g medium-cli
+
+See [repo][medium-cli] for setup instructions.
+
+## Publish
+
+    $ cd medium
+    $ medium publish
+
+This adds `published: true` to the front matter of the published articles to avoid duplication.
+
+[medium-cli]: https://github.com/lambtron/medium-cli
