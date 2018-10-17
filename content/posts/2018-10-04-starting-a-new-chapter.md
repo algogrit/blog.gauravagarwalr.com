@@ -114,9 +114,9 @@ Of course, novelty just for the sake of novelty isn't a worthwhile endeavour. I 
 
 # Steps / challenges / experiments I am planning to take on in the next 2 years
 
-- Bring mithaibhai.com to life as a commercial entity in the next month or so... This is something which I have been intending to do since 2014.
+- Bring [mithaibhai.com](https://mithaibhai.com) to life as a commercial entity in the next month or so... This is something which I have been intending to do since 2014.
 
-- Breathe life into 2 other projects and ideas I have been toying around with since the beginning of this year. One is codermana.com and the other being silkmon.com.
+- Breathe life into 2 other projects and ideas I have been toying around with since the beginning of this year. One is [codermana.com](https://codermana.com) and the other being [silkmon.com](https://silkmon.com).
 
 - Build a way to make data from disparate sources easily accessible, there are multiple tools in this space. I would be building one focussed on the Indian Markets exclusively. This is something I had been intending to do since 2012. There is a hobbyist project out there, which is quite close to what I was intending to build and I would probably reach out and collaborate on building it.
 
