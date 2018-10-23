@@ -1,7 +1,7 @@
 ---
 title: "Bash - n things you didn't know"
 layout: Post
-date: 2018-06-16
+date: 2018-10-19
 tags: bash
 ---
 
@@ -45,11 +45,76 @@ This simply means that the command in the first directory gets executed.
 
 This brings us to...
 
-## Wrapping your head around wrapping executables
+## `which` command
 
+From the `man` page
 
+> > which -- locate a program file in the user's path
+
+`which` command basically finds the exact location of an executable in one's `$PATH` variable. Using `which` you can also figure out multiple executables with same name in your `$PATH` and their respective location.
+
+For eg, on my machine `git` is located in:
+
+```bash
+  $ which -a git
+/usr/local/bin/git
+/usr/bin/git
+```
+
+Now, when I run `git` command, the executable from the first location gets picked up and executed.
+
+## `PS1` variable
+
+What does the `$PS1` variable look in my machine?
+
+```bash
+  $ echo $PS1
+\[\033[1;36m\]\w:$(parse_git_branch) $ \[\033[0m\]
+```
+
+Uh what? Let's try and decode each part:
+
+  * `\[\033[1;36m\]`...`\[\033[0m\]`
+
+  This part sets the prompt color to be in cyan. You can read more about it [here][BashColors]. From [SO][BashEscapeSequence],
+
+> > The \033 is the escape character, and those sequence are not bash specific but interpreted by the terminal (software or hardware (via network or serial line)) in which the (bash) program runs. There are many such sequences.
+
+  * `\w`
+
+  This sequence gets the current working directory path.
+
+  * `$(parse_git_branch)`
+
+  As the name suggests, it gets the current branch name along with a status indicator. So what is `parse_git_branch`?
+
+```bash
+  $ type parse_git_branch
+parse_git_branch is a function
+parse_git_branch ()
+{
+    echo "$(__git_ps1)"
+}
+```
+
+  * `$`
+
+  This is just a silly little delimiter I have added to make it more bashy.
+
+All right, got it? But what does the `PS1` variable actually do?
+
+`PS1` is one of the few [**P**rompt **S**tatement variables][PromptStatementVariable]. The rest are numbered from 2-4. `PS1` being the default interactive prompt. It controls the output on the screen before the cursor (before anything has been typed).
+
+On my terminal, based on the above `PS1` value it outputs `~/Developer/Gaurav/blog.gauravagarwalr.com/project-resources: (blog +) $`, in cyan, of course!
+
+## `exec bash`
+
+The `exec` builtin is used to replace the current process with the invoked - shell/script/program. When the invoked process exits, the terminal exits as well.
 
 [PATH_Definition]: https://kb.iu.edu/d/acar
-[BashPATHGif]: https://blog.gauravagarwalr.com/assets/gifs/03-bash-paths.gif
+[BashPATHGif]: https://blog.algogrit.com/assets/gifs/03-bash-paths.gif
 [BashPathGifAC]: https://asciinema.org/a/iOnUcPLwGtKHeoDOGLnmpTl1G
 [PATH_Behavior]: https://en.wikipedia.org/wiki/PATH_(variable)#Unix_and_Unix-like
+[BashColors]: http://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
+[BashEscapeSequence]: https://unix.stackexchange.com/a/116244/26799
+[PromptStatementVariable]: https://ss64.com/bash/syntax-prompt.html
