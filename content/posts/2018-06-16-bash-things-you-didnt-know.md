@@ -120,4 +120,4 @@ The `exec` builtin is used to replace the current process with the invoked - she
 [BashColors]: http://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
 [BashEscapeSequence]: https://unix.stackexchange.com/a/116244/26799
 [PromptStatementVariable]: https://ss64.com/bash/syntax-prompt.html
-[BashexecGif]: https://blog.algogrit.com/assets/gifs/05-bash-exec.gif
+[BashexecGif]: https://blog.algogrit.com/assets/gifs/04-bash-exec.gif
