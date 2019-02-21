@@ -173,7 +173,7 @@ Signing off for now. Please leave your thoughts and comments in the section belo
 [HashingSecurity]: https://crackstation.net/hashing-security.htm
 [CryptoSaltAndHash]: https://crypto.stackexchange.com/questions/1776/can-you-help-me-understand-what-a-cryptographic-salt-is
 [GormAssociations]: http://jinzhu.me/gorm/associations.html
-[YAES-API]: https://github.com/algogrit/Yet-Another-Expense-Splitter
-[YAES-Expense-API]: https://github.com/algogrit/Yet-Another-Expense-Splitter/blob/37340cf6154ea2485ede06becee401c735e13c96/swagger.yml#L87
+[YAES-API]: https://github.com/algogrit/yaes-server
+[YAES-Expense-API]: https://github.com/algogrit/yaes-server/blob/37340cf6154ea2485ede06becee401c735e13c96/swagger.yml#L87
 [ZeroValues]: https://tour.golang.org/basics/12
 [GoValidator]: https://github.com/go-validator/validator
