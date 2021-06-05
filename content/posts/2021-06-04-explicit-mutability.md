@@ -137,7 +137,7 @@ primes.iter_mut().for_each(|el| { *el = *el * 2 }); // Doesn't compile either
 
 Rust compiler ensures that the data in collections can't be updated, unless the collections itself are marked as mutable, same as any primitive type.
 
-One other thing to note, Rust allows for different access to the elements in a collections through the different iterators (by calling `iter` or `iter_mut` for example) you create. This isn't something you can control as a programmer in many other languages.
+One other thing to note, Rust allows for different access to the elements in a collection through the different iterators (by calling `iter` or `iter_mut` for example) you create. This isn't something you can control as a programmer in many other languages.
 
 So far so good. But what about thread-safety?
 
