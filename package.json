@@ -129,7 +129,7 @@
     "whatwg-fetch": "^0.11.0"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "md5": "^2.2.1",
     "react-disqus-thread": "^0.4.0"
   }
