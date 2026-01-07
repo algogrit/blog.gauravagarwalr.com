@@ -9,17 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: '#2563eb',
-          dark: '#1e40af',
-          light: '#3b82f6',
-        },
-        accent: {
-          DEFAULT: '#10b981',
-          dark: '#059669',
-        },
-        gray: {
-          950: '#0a0a0a',
+        brand: {
+          light: "#FDBA74",   // amber-300
+          DEFAULT: "#F59E0B", // amber-500
+          dark: "#B45309"     // amber-700
         }
       },
     },
