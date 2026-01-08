@@ -64,7 +64,7 @@ These files contain the domain model's type definitions. Apart from this the `us
 
 All of the packages can be imported except main as follows:
 
-```golang
+```go
 import {
   api "github.com/algogrit/yaes-server/src/api"
   db "github.com/algogrit/yaes-server/src/config/db"
@@ -74,7 +74,7 @@ import {
 
 As an example you can use the `Instance` function like:
 
-```golang
+```go
   db.Instance()
 ```
 

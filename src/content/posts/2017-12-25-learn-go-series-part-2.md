@@ -88,7 +88,7 @@ With the user model defined and the db configured. All we have left to do is the
 
 ### api.go
 
-``` golang
+```go
 package api
 
 import (
