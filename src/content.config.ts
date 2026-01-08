@@ -9,7 +9,11 @@ const posts = defineCollection({
 		z.object({
 			title: z.string(),
 			excerpt: z.string(),
+			tags: z.string().transform((str) =>
+				str.split(',').map(tag => tag.trim())
+			),
 			// Transform string to Date object
+			featured: z.boolean().optional(),
 			date: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
 			heroImage: image().optional(),
