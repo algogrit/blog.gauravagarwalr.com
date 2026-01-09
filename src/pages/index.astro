@@ -2,9 +2,13 @@
 import { getCollection } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
-import HomePosts from '../components/HomePosts';
+import NewsletterCTA from '../components/sections/NewsletterCTA';
+
+import Hero from '../components/sections/Hero.astro';
+import HomePosts from '../components/sections/HomePosts';
+import Navbar from '../components/sections/Navbar';
+import About from '../components/sections/About';
 
 const posts = await getCollection("posts");
 
@@ -15,11 +19,12 @@ const posts = await getCollection("posts");
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
-		<Header />
-		<main>
-			<HomePosts posts={posts} client:load/>
-		</main>
+	<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+		<Navbar client:load/>
+		<Hero/>
+		<HomePosts posts={posts} client:load/>
+		<NewsletterCTA/>
+		<About/>
 		<Footer />
 	</body>
 </html>

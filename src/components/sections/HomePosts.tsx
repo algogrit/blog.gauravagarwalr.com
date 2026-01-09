@@ -1,9 +1,10 @@
+// TODO: Get the search working
 import type { CollectionEntry } from "astro:content";
 import { useMemo, useState } from "react";
 // import { useSearchParams } from "react-router-dom";
-import { TagFilter } from "./TagFilter";
-import FeaturedPost from "./FeaturedPost";
-import PostCard from "./PostCard";
+import FeaturedPost from "../posts/FeaturedPost";
+import LatestPosts from "../posts/LatestPosts";
+import { TagFilter } from "../tags/TagFilter";
 
 const HomePosts = ({
   posts,
@@ -16,7 +17,6 @@ const HomePosts = ({
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
   const handleTagSelect = (tag: string | null) => {
-    console.log(tag);
     if (tag) {
       setSelectedTag(tag);
     } else {
@@ -48,9 +48,6 @@ const HomePosts = ({
         (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
       );
   }, [selectedTag, searchQuery]);
-  // const allTags = [...new Set(posts.flatMap(post => post.data.tags))];
-
-  // const [selectedTag, setSelectedTag] = useState('');
 
   const tagCounts = posts
     .flatMap(post => post.data.tags)
@@ -63,33 +60,20 @@ const HomePosts = ({
     .sort((a, b) => b[1] - a[1])
     .map(([tag]) => tag);
 
-  console.log(allTags);
-
-  // if selectedTag == '' {
-  //   filteredPosts =
-  // }
 
   return (
     <>
+      <FeaturedPost post={featuredPost}/>
+
       <TagFilter
         tags={allTags}
         selectedTag={selectedTag}
         onTagSelect={handleTagSelect}
       />
 
-      <FeaturedPost post={featuredPost}/>
-
-      <section id="posts" className="max-w-7xl mx-auto px-6 pb-24">
-        <h2 className="text-3xl font-bold mb-10">Latest Articles</h2>
-
-        {filteredPosts.splice(0, 5).map(post => (
-            <PostCard post={post}/>
-        ))}
-      </section>
+      <LatestPosts posts={filteredPosts}/>
     </>
   );
-
-
 };
 
 
