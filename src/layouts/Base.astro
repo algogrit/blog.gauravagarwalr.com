@@ -1,0 +1,18 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/sections/Navbar";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+		<Navbar client:load/>
+		<slot/>
+		<Footer />
+	</body>
+</html>
