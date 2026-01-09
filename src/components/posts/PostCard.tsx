@@ -2,10 +2,7 @@ import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../FormattedDate";
 import TagPill from "../tags/TagPill";
 
-const PostCard = ({
-  post
-}: {post: CollectionEntry<"posts">}) => {
-
+export default function PostCard({ post }: {post: CollectionEntry<"posts">}) {
   return (
     <a href={"/posts/"+post.id} className="group bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-orange-500 hover:shadow-xl overflow-hidden">
       <div className="p-6">
@@ -37,5 +34,3 @@ const PostCard = ({
     </a>
   );
 }
-
-export default PostCard;

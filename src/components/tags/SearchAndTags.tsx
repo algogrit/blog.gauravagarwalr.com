@@ -1,20 +1,23 @@
 import TagButton from "./TagButton";
 
-interface TagFilterProps {
+interface SearchAndTagsProps {
   tags: string[];
   selectedTag: string | null;
   onTagSelect: (tag: string | null) => void;
 }
 
-export const TagFilter = ({ tags, selectedTag, onTagSelect }: TagFilterProps) => {
+export default function SearchAndTags({ tags, selectedTag, onTagSelect }: SearchAndTagsProps) {
   return (
-    <section className="bg-amber-50 border-y border-amber-200 dark:border-gray-800 dark:bg-gray-900/50 py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center gap-2 mb-8">
-          <div className="h-1 w-12 bg-linear-to-r from-orange-500 to-yellow-500 rounded mr-3"></div>
-          <h2 className="text-3xl font-bold">Browse by Tag</h2>
-        </div>
-        <div className="max-w-5xl mx-auto px-6 py-8 flex flex-wrap justify-center gap-3">
+    <section className="max-w-7xl mx-auto px-6 py-10">
+      <div className="flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
+
+        <input
+          type="text"
+          placeholder="Search by title, tag, or keyword…"
+          className="w-full md:w-96 px-4 py-2 border rounded-lg focus:outline-none focus:border-brand"
+        />
+
+        <div className="flex flex-wrap gap-2">
           <TagButton key="all-posts" onClick={() => onTagSelect(null)} tag="All Posts" isSelected={selectedTag === null}/>
           {
             selectedTag &&
@@ -28,4 +31,4 @@ export const TagFilter = ({ tags, selectedTag, onTagSelect }: TagFilterProps) =>
       </div>
     </section>
   );
-};
+}
