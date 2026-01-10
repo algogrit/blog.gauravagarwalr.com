@@ -22,9 +22,9 @@ const { Content } = await render(post);
 	<article class="max-w-4xl mx-auto px-4 py-12">
 		<header class="mb-8">
 			<div class="flex gap-2 mb-4">
-				{post.data.tags.map((tag) => {
-					<PostTagPill tag={tag}/>
-				})}
+				{post.data.tags.map((tag) => (
+					<PostTagPill tag={tag} />
+				))}
 			</div>
 			<h1 class="text-4xl md:text-5xl font-bold mb-4">{post.data.title}</h1>
 			<div class="flex items-center gap-4 text-gray-600 dark:text-gray-400">

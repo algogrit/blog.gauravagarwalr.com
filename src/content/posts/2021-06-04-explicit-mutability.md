@@ -1,7 +1,7 @@
 ---
 title: "A case for explicit mutability"
 date: 2021-06-04
-tags: c++, rust, clojure, go, java, mutability, immutability
+tags: rust, go, c++, clojure, java, mutability, immutability
 excerpt: Implicit vs Explicit Mutability - Lessons from Go, FP, and Rust
 ---
 

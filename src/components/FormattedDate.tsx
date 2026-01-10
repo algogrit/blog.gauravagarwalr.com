@@ -1,4 +1,4 @@
-const FormattedDate = ({ date } : {date: Date}) => {
+export default function FormattedDate({ date } : {date: Date}) {
 	return (
 		<time dateTime={date.toISOString()}>
 			{
@@ -11,5 +11,3 @@ const FormattedDate = ({ date } : {date: Date}) => {
 		</time>
 	);
 }
-
-export default FormattedDate;
