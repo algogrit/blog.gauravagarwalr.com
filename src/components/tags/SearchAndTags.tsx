@@ -13,7 +13,7 @@ export default function SearchAndTags({ tags, selectedTag, onTagSelect }: Search
       <div className="flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
 
         <input
-          type="text"
+          type="search"
           placeholder="Search by title, tag, or keyword…"
           onChange={(e) => setQueryParam("q", e.target.value)}
           className="w-full md:w-96 px-4 py-2 border rounded-lg focus:outline-none focus:border-brand"

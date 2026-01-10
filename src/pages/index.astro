@@ -13,23 +13,12 @@ import FeaturedPost from '../components/posts/FeaturedPost';
 const posts = addReadingTime(await getCollection("posts"));
 const featuredPost = posts.find((post) => post.data.featured);
 
-const tagCounts = posts
-	.flatMap(post => post.data.tags)
-	.reduce((acc: any, tag: string) => {
-		acc[tag] = (acc[tag] || 0) + 1;
-		return acc;
-	}, {});
-
-const allTags = Object.entries(tagCounts)
-	.sort((a, b) => b[1] - a[1])
-	.map(([tag]) => tag);
-
 ---
 
 <Base>
 	<Hero/>
 	<FeaturedPost post={featuredPost}/>
-	<HomePosts posts={posts} tags={allTags} client:only/>
+	<HomePosts posts={posts} client:only/>
 	<HomeNewsletter/>
 	<About/>
 </Base>

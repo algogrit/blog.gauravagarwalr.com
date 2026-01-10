@@ -7,8 +7,9 @@ import type { PostWithRT } from "../../data/posts/interface";
 
 import useQueryParams from "../helpers/useQueryParams";
 import setQueryParam from "../helpers/setQueryParam";
+import HomeSearch from "../tags/HomeSearch";
 
-export default function HomePosts({ posts, tags }: { posts: PostWithRT[], tags: string[] }) {
+export default function HomePosts({ posts }: { posts: PostWithRT[] }) {
   const query = useQueryParams();
   const selectedTag = query.get("tag");
   const searchQuery = query.get("q");
@@ -36,15 +37,28 @@ export default function HomePosts({ posts, tags }: { posts: PostWithRT[], tags: 
       );
   }, [selectedTag, searchQuery]);
 
+  const tagCounts = posts
+  .flatMap(post => post.data.tags)
+  .reduce((acc: any, tag: string) => {
+    acc[tag] = (acc[tag] || 0) + 1;
+    return acc;
+  }, {});
+
+  const allTags = Object.entries(tagCounts)
+    .sort((a, b) => b[1] - a[1])
+    .map(([tag]) => tag);
+
   return (
     <>
       <TagFilter
-        tags={tags}
+        tags={allTags}
         selectedTag={selectedTag}
         onTagSelect={(tag: string | null) => setQueryParam("tag", tag)}
       />
 
       <LatestPosts posts={filteredPosts} />
+
+      <HomeSearch/>
     </>
   );
 };
