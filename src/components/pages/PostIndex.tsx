@@ -1,12 +1,7 @@
 // TODO: Get the search working
 import type { CollectionEntry } from "astro:content";
 import { useMemo, useState } from "react";
-// import { useSearchParams } from "react-router-dom";
-import FeaturedPost from "../posts/FeaturedPost";
-import LatestPosts from "../posts/LatestPosts";
-import { TagFilter } from "../tags/TagFilter";
 import SearchAndTags from "../tags/SearchAndTags";
-import FormattedDate from "../FormattedDate";
 
 export default function PostIndex({ posts }: { posts: CollectionEntry<"posts">[] }) {
   const [searchQuery, setSearchQuery] = useState("");
@@ -21,8 +16,6 @@ export default function PostIndex({ posts }: { posts: CollectionEntry<"posts">[]
       setSelectedTag(null);
     }
   };
-
-  const featuredPost = posts.find((post) => post.data.featured);
 
   const filteredPosts = useMemo(() => {
     return posts
