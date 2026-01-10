@@ -7,7 +7,6 @@ import type { PostWithRT } from "../../data/posts/interface";
 
 import useQueryParams from "../helpers/useQueryParams";
 import setQueryParam from "../helpers/setQueryParam";
-import HomeSearch from "../tags/HomeSearch";
 
 export default function HomePosts({ posts }: { posts: PostWithRT[] }) {
   const query = useQueryParams();
@@ -57,8 +56,6 @@ export default function HomePosts({ posts }: { posts: PostWithRT[] }) {
       />
 
       <LatestPosts posts={filteredPosts} />
-
-      <HomeSearch/>
     </>
   );
 };
