@@ -1,7 +1,7 @@
-import type { CollectionEntry } from "astro:content";
 import PostCard from "./PostCard";
+import type { PostWithRT } from "../../data/posts/interface";
 
-export default function LatestPosts({posts}: {posts: CollectionEntry<"posts">[]}) {
+export default function LatestPosts({posts}: {posts: PostWithRT[]}) {
   return (
     <section id="latest-articles" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="flex items-center justify-between mb-8">

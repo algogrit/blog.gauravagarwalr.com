@@ -7,7 +7,9 @@ import About from '../components/sections/About';
 import Base from '../layouts/Base.astro';
 import HomeNewsletter from '../components/cta/HomeNewsletter';
 
-const posts = await getCollection("posts");
+import addReadingTime from '../data/posts/addReadingTime';
+
+const posts = addReadingTime(await getCollection("posts"));
 
 ---
 

@@ -1,10 +1,10 @@
 // TODO: Get the search working
-import type { CollectionEntry } from "astro:content";
 import { useMemo, useState } from "react";
 import SearchAndTags from "../tags/SearchAndTags";
 import PostsNewsletter from "../cta/PostsNewsletter";
+import type { PostWithRT } from "../../data/posts/interface";
 
-export default function PostIndex({ posts }: { posts: CollectionEntry<"posts">[] }) {
+export default function PostIndex({ posts }: { posts: PostWithRT[] }) {
   const [searchQuery, setSearchQuery] = useState("");
 
   // const selectedTag = searchParams.get("tag");
@@ -74,7 +74,7 @@ export default function PostIndex({ posts }: { posts: CollectionEntry<"posts">[]
                   </div>
                   <div className="flex gap-4 text-xs text-slate-500 dark:text-gray-300">
                     <span>{post.data.tags[0].split("-").join(' ')}</span>
-                    <span>12 min</span>
+                    <span>{post.readingTime.minutes} min</span>
                     <span>{post.data.date.getFullYear()}</span>
                   </div>
                 </div>

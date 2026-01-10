@@ -3,8 +3,9 @@ import { getCollection } from 'astro:content';
 
 import Base from '../../layouts/Base.astro';
 import PostIndex from '../../components/pages/PostIndex';
+import addReadingTime from '../../data/posts/addReadingTime';
 
-const posts = (await getCollection('posts')).sort(
+const posts = addReadingTime(await getCollection('posts')).sort(
 	(a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
 ---

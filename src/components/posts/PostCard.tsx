@@ -1,8 +1,9 @@
-import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../FormattedDate";
 import TagPill from "../tags/TagPill";
 
-export default function PostCard({ post }: {post: CollectionEntry<"posts">}) {
+import type { PostWithRT } from "../../data/posts/interface";
+
+export default function PostCard({ post }: {post: PostWithRT}) {
   return (
     <a href={"/posts/"+post.id} className="group bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-orange-500 hover:shadow-xl overflow-hidden">
       <div className="p-6">
@@ -19,7 +20,7 @@ export default function PostCard({ post }: {post: CollectionEntry<"posts">}) {
             </svg>
             <FormattedDate date={post.data.date}/>
           </span>
-          <span>8 min read</span>
+          <span>{post.readingTime.text}</span>
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-3 mb-4">
           {post.data.excerpt}

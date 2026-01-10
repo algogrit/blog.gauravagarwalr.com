@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'posts'>;
 
 const post = Astro.props;
-const { Content } = await render(post);
+const { Content, remarkPluginFrontmatter } = await render(post);
 
 const requiredTags = post.data.tags;
 const currentPostID = post.id;
@@ -48,7 +48,7 @@ const relatedPosts = (await getCollection('posts'))
 					<FormattedDate date={post.data.date} />
 				</span>
 				<span>•</span>
-				<span>15 min read</span>
+				<span>{remarkPluginFrontmatter.minutesRead}</span>
 			</div>
 		</header>
 

@@ -1,10 +1,10 @@
-import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../FormattedDate";
 import FeaturedTagPill from "../tags/FeaturedTagPill";
+import type { PostWithRT } from "../../data/posts/interface";
 
 const FeaturedPost = ({
   post
-}: {post: CollectionEntry<"posts"> | undefined}) => {
+}: {post: PostWithRT | undefined}) => {
   if(post === undefined) {
     return <></>
   }
@@ -34,7 +34,7 @@ const FeaturedPost = ({
                 </svg>
                 <FormattedDate date={post.data.date}/>
               </span>
-              <span>15 min read</span>
+              <span>{post.readingTime.text}</span>
               <span className="px-2 py-1 bg-orange-500/10 text-orange-500 dark:text-orange-400 rounded text-xs font-medium">Featured</span>
             </div>
             <p className="text-lg mb-6 text-gray-600 dark:text-gray-300 leading-relaxed">
