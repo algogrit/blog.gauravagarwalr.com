@@ -67,7 +67,7 @@ export default function PostIndex({ posts }: { posts: CollectionEntry<"posts">[]
       <main className="max-w-5xl mx-auto px-6 pb-24">
         <ul className="divide-y">
           {filteredPosts.map((post) => (
-            <li className="py-8 hover:mb-2 hover:border-amber-400 hover:border transition rounded-lg px-4 border-amber-100 dark:border-gray-800">
+            <li className="py-8 hover:border-amber-400 border transition rounded-lg px-4 border-white dark:border-gray-900 border-t-amber-100 dark:border-t-gray-800" key={post.id}>
               <a href={"/posts/"+post.id}>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                   <div>

@@ -42,7 +42,7 @@ const { Content } = await render(post);
 		<div class="hero-image">
 			{post.data.heroImage && <Image width={1020} height={510} src={post.data.heroImage} alt="" />}
 		</div>
-		<div class="prose max-w-none text-gray-700 dark:text-gray-300">
+		<div class="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300">
 			<Content />
 		</div>
 	</article>
