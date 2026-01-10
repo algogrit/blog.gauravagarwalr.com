@@ -1,33 +1,20 @@
-// TODO: Get the search working
-import { useMemo, useState } from "react";
-// import { useSearchParams } from "react-router-dom";
-import FeaturedPost from "../posts/FeaturedPost";
+import { useMemo } from "react";
+
 import LatestPosts from "../posts/LatestPosts";
 import { TagFilter } from "../tags/TagFilter";
+
 import type { PostWithRT } from "../../data/posts/interface";
 
-const HomePosts = ({
-  posts,
-}: {
-  posts: PostWithRT[];
-}) => {
-  const [searchQuery, setSearchQuery] = useState("");
+import useQueryParams from "../helpers/useQueryParams";
+import setQueryParam from "../helpers/setQueryParam";
 
-  const [selectedTag, setSelectedTag] = useState<string | null>(null);
-
-  const handleTagSelect = (tag: string | null) => {
-    if (tag) {
-      setSelectedTag(tag);
-    } else {
-      setSelectedTag(null);
-    }
-  };
-
-  const featuredPost = posts.find((post) => post.data.featured);
+export default function HomePosts({ posts, tags }: { posts: PostWithRT[], tags: string[] }) {
+  const query = useQueryParams();
+  const selectedTag = query.get("tag");
+  const searchQuery = query.get("q");
 
   const filteredPosts = useMemo(() => {
     return posts
-      .filter((post) => !post.data.featured)
       .filter((post) => {
         // Filter by tag
         if (selectedTag && !post.data.tags.includes(selectedTag)) {
@@ -39,7 +26,8 @@ const HomePosts = ({
           return (
             post.data.title.toLowerCase().includes(query) ||
             post.data.excerpt.toLowerCase().includes(query) ||
-            post.data.tags.some((tag) => tag.toLowerCase().includes(query))
+            post.data.tags.some((tag) => tag.toLowerCase().includes(query)) ||
+            (post.body && post.body.toLowerCase().includes(query))
           );
         }
         return true;
@@ -48,32 +36,15 @@ const HomePosts = ({
       );
   }, [selectedTag, searchQuery]);
 
-  const tagCounts = posts
-    .flatMap(post => post.data.tags)
-    .reduce((acc: any, tag: string) => {
-      acc[tag] = (acc[tag] || 0) + 1;
-      return acc;
-    }, {});
-
-  const allTags = Object.entries(tagCounts)
-    .sort((a, b) => b[1] - a[1])
-    .map(([tag]) => tag);
-
-
   return (
     <>
-      <FeaturedPost post={featuredPost}/>
-
       <TagFilter
-        tags={allTags}
+        tags={tags}
         selectedTag={selectedTag}
-        onTagSelect={handleTagSelect}
+        onTagSelect={(tag: string | null) => setQueryParam("tag", tag)}
       />
 
-      <LatestPosts posts={filteredPosts}/>
+      <LatestPosts posts={filteredPosts} />
     </>
   );
 };
-
-
-export default HomePosts;

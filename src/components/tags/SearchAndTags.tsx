@@ -1,3 +1,4 @@
+import setQueryParam from "../helpers/setQueryParam";
 import TagButton from "./TagButton";
 
 interface SearchAndTagsProps {
@@ -14,18 +15,14 @@ export default function SearchAndTags({ tags, selectedTag, onTagSelect }: Search
         <input
           type="text"
           placeholder="Search by title, tag, or keyword…"
+          onChange={(e) => setQueryParam("q", e.target.value)}
           className="w-full md:w-96 px-4 py-2 border rounded-lg focus:outline-none focus:border-brand"
         />
 
         <div className="flex flex-wrap gap-2">
           <TagButton key="all-posts" onClick={() => onTagSelect(null)} tag="All Posts" isSelected={selectedTag === null}/>
-          {
-            selectedTag &&
-            <TagButton key="selected-tag" onClick={() => onTagSelect(null)} tag={selectedTag} isSelected={true}/>
-          }
-
-          {tags.filter(tag => tag != selectedTag).splice(0, 7).map((tag) => (
-            <TagButton key={tag} onClick={() => onTagSelect(tag)} tag={tag} isSelected={false}/>
+          {tags.splice(0, 7).map((tag) => (
+            <TagButton key={tag} onClick={() => onTagSelect(tag == selectedTag ? null : tag)} tag={tag} isSelected={tag == selectedTag}/>
           ))}
         </div>
       </div>

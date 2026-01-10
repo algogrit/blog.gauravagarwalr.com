@@ -16,13 +16,9 @@ export const TagFilter = ({ tags, selectedTag, onTagSelect }: TagFilterProps) =>
         </div>
         <div className="max-w-5xl mx-auto px-6 py-8 flex flex-wrap justify-center gap-3">
           <TagButton key="all-posts" onClick={() => onTagSelect(null)} tag="All Posts" isSelected={selectedTag === null}/>
-          {
-            selectedTag &&
-            <TagButton key="selected-tag" onClick={() => onTagSelect(null)} tag={selectedTag} isSelected={true}/>
-          }
 
-          {tags.filter(tag => tag != selectedTag).splice(0, 7).map((tag) => (
-            <TagButton key={tag} onClick={() => onTagSelect(tag)} tag={tag} isSelected={false}/>
+          {tags.splice(0, 7).map((tag) => (
+            <TagButton key={tag} onClick={() => onTagSelect(tag == selectedTag ? null : tag)} tag={tag} isSelected={tag == selectedTag}/>
           ))}
         </div>
       </div>

@@ -17,5 +17,5 @@ const posts = addReadingTime(await getCollection('posts')).sort(
 					<p class="text-xl opacity-90">Essays, deep dives, and technical explorations across programming and systems.</p>
 			</div>
 	</section>
-	<PostIndex posts={posts} client:load/>
+	<PostIndex posts={posts} client:only/>
 </Base>

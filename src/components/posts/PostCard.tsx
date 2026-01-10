@@ -8,7 +8,7 @@ export default function PostCard({ post }: {post: PostWithRT}) {
     <a href={"/posts/"+post.id} className="group bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-orange-500 hover:shadow-xl overflow-hidden">
       <div className="p-6">
         <div className="flex flex-wrap gap-2 mb-3">
-          {post.data.tags.map((tag, index) => (
+          {post.data.tags.splice(0, 3).map((tag, index) => (
             <TagPill tag={tag} key={index}/>
           ))}
         </div>
