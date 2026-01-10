@@ -9,7 +9,7 @@ export default function About() {
               <h2 className="text-3xl font-bold">About the Author</h2>
             </div>
             <p className="text-lg mb-4 text-gray-600 dark:text-gray-300">
-              Hi, I'm Gaurav Agarwal, a Director of Engineering passionate about building scalable systems and sharing knowledge with the engineering community.
+              👋&nbsp;&nbsp;I'm Gaurav Agarwal, a Director of Engineering passionate about building scalable systems and sharing knowledge with the engineering community.
             </p>
             <p className="text-lg mb-6 text-gray-600 dark:text-gray-300">
               Through this blog, I share deep technical insights, programming concepts, and lessons learned from years of software development.
@@ -35,7 +35,7 @@ export default function About() {
               </li>
               <li className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                14+ Programming Languages
+                14+ Programming Languages & tools
               </li>
             </ul>
             <a href="https://codermana.com" className="block w-full px-6 py-3 bg-linear-to-r from-orange-500 to-yellow-500 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-yellow-600 text-center shadow-lg">
