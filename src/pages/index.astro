@@ -1,11 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
-import NewsletterCTA from '../components/sections/NewsletterCTA';
 
 import Hero from '../components/sections/Hero.astro';
 import HomePosts from '../components/sections/HomePosts';
 import About from '../components/sections/About';
 import Base from '../layouts/Base.astro';
+import HomeNewsletter from '../components/cta/HomeNewsletter';
 
 const posts = await getCollection("posts");
 
@@ -14,6 +14,6 @@ const posts = await getCollection("posts");
 <Base>
 	<Hero/>
 	<HomePosts posts={posts} client:load/>
-	<NewsletterCTA/>
+	<HomeNewsletter/>
 	<About/>
 </Base>

@@ -2,6 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import { useMemo, useState } from "react";
 import SearchAndTags from "../tags/SearchAndTags";
+import PostsNewsletter from "../cta/PostsNewsletter";
 
 export default function PostIndex({ posts }: { posts: CollectionEntry<"posts">[] }) {
   const [searchQuery, setSearchQuery] = useState("");
@@ -83,6 +84,8 @@ export default function PostIndex({ posts }: { posts: CollectionEntry<"posts">[]
 
         </ul>
       </main>
+
+      <PostsNewsletter/>
     </>
   );
 };

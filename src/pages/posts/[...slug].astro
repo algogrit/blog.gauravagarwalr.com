@@ -4,6 +4,9 @@ import { type CollectionEntry, getCollection, render } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate';
 import Base from '../../layouts/Base.astro';
 import PostTagPill from '../../components/tags/PostTagPill';
+import PostNewsletter from '../../components/cta/PostNewsletter';
+import RelatedPosts from '../../components/posts/RelatedPosts';
+import Comments from '../../components/sections/Comments';
 
 export async function getStaticPaths() {
 	const posts = await getCollection('posts');
@@ -16,6 +19,16 @@ type Props = CollectionEntry<'posts'>;
 
 const post = Astro.props;
 const { Content } = await render(post);
+
+const requiredTags = post.data.tags;
+const currentPostID = post.id;
+
+const relatedPosts = (await getCollection('posts'))
+	.filter(post => post.id != currentPostID)
+	.filter(post =>
+		requiredTags.some(tag => post.data.tags.includes(tag))
+	).splice(0, 2);
+
 ---
 
 <Base>
@@ -45,5 +58,10 @@ const { Content } = await render(post);
 		<div class="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300">
 			<Content />
 		</div>
+
+		<PostNewsletter/>
+		<RelatedPosts posts={relatedPosts}/>
+		<Comments/>
+
 	</article>
 </Base>
