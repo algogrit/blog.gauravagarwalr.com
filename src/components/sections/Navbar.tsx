@@ -28,7 +28,7 @@ export default function Navbar() {
                         <a href="/posts" className="text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400">
                             Articles
                         </a>
-                        <a href="https://algogrit.com" className="text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400">
+                        <a href="https://algogrit.com" target="_blank" className="text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400">
                             About
                         </a>
                         <a href="https://codermana.com" target="_blank" className="text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400">
