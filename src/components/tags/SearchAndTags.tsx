@@ -16,7 +16,7 @@ export default function SearchAndTags({ tags, selectedTag, onTagSelect }: Search
           type="search"
           placeholder="Search by title, tag, or keyword…"
           onChange={(e) => setQueryParam("q", e.target.value)}
-          className="w-full md:w-96 px-4 py-2 border rounded-lg focus:outline-none focus:border-brand"
+          className="w-full md:w-96 px-4 py-2 border border-gray-200 dark:border-gray-800 rounded-lg focus:outline-none focus:border-accent"
         />
 
         <div className="flex flex-wrap gap-2">
