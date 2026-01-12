@@ -36,7 +36,7 @@ For most functional programmers, the use of the variable `"k"` & how it loses me
 
 ## What about functional languages?
 
-Functional languages promote the concept of immutability. The above example doesn't translate just as well in these languages, as you would have to rebing the `"variable"` to it's new value.
+Functional languages promote the concept of immutability. The above example doesn't translate just as well in these languages, as you would have to rebind the `"variable"` to it's new value.
 
 ```clj
 ;; Trying to mutate a key in a HashMap
