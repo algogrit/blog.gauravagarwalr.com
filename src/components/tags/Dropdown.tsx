@@ -2,7 +2,7 @@ import DropdownOption from "./DropdownOption";
 
 interface DropdownProps {
   tags: string[],
-  selectedTag?: string,
+  selectedTag: string | null,
   onTagSelect: (tag: string | null) => void
 }
 

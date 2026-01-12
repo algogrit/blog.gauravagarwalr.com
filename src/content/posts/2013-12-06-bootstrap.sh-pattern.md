@@ -1,7 +1,7 @@
 ---
 title: "Bootstrap.sh Pattern"
 date: 2013-12-06
-tags: setup, devops, utility, bash
+tags: setup, devops, bash
 excerpt: ./bootstrap.sh — one script to check dependencies, install what’s needed, and run your app. This post explains why every project should have one.
 ---
 

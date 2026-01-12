@@ -1,7 +1,7 @@
 ---
 title:  "Introducing git multi"
 date:   2013-07-30
-tags: git, utility
+tags: git
 excerpt: git-multi is a lightweight shell utility that lets you run Git commands across multiple repositories in one shot—no more manual hopping between directories.
 ---
 

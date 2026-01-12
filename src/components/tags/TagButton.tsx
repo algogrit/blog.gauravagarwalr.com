@@ -1,9 +1,13 @@
 import { cn } from "../../lib/utils";
 import safeURL from "../helpers/safeURL";
 
-interface TagButtonProps { tag: string, isSelected: boolean };
+interface TagButtonProps {
+  tag: string,
+  isSelected: boolean,
+  isFiltering?: boolean
+};
 
-export default function TagButton({tag, isSelected}: TagButtonProps) {
+export default function TagButton({tag, isSelected, isFiltering}: TagButtonProps) {
   let buttonClass = cn(
     "px-5 py-2 rounded-full cursor-pointer",
     isSelected ?
@@ -16,8 +20,14 @@ export default function TagButton({tag, isSelected}: TagButtonProps) {
                   .join(' ');
 
 
+    let postsPage = "/posts";
+
+    if(isFiltering) {
+      postsPage = safeURL("/posts", {"tag": tag});
+    }
+
   return (
-    <a href={safeURL("/posts", {"tag": tag})}>
+    <a href={postsPage}>
       <button className={buttonClass}>
         {tagLabel}
       </button>

@@ -15,7 +15,7 @@ export default function TagNav({ tags }: TagFilterProps) {
         <div className="max-w-5xl mx-auto px-6 py-8 flex flex-wrap justify-center gap-3">
           <TagButton key="all-posts" tag="All Posts" isSelected={true}/>
           {tags.map((tag) => (
-            <TagButton key={tag} tag={tag} isSelected={false}/>
+            <TagButton key={tag} tag={tag} isFiltering={true} isSelected={false}/>
           ))}
         </div>
       </div>

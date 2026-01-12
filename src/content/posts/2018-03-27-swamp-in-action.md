@@ -1,7 +1,7 @@
 ---
 title: "Swamp in action - Finding relevant branches in git"
 date: 2018-03-27
-tags: git, utility, multiple-branches
+tags: git, multiple-branches
 excerpt: Lost in a swamp of Git branches? This post introduces a simple command to visualize branch relevance against master.
 ---
 

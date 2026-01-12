@@ -4,7 +4,7 @@ import TagButton from "./TagButton";
 
 interface SearchAndTagsProps {
   tags: string[];
-  selectedTag?: string;
+  selectedTag: string | null;
   onTagSelect: (tag: string | null) => void;
 }
 
