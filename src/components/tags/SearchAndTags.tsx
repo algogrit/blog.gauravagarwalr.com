@@ -1,9 +1,10 @@
 import setQueryParam from "../helpers/setQueryParam";
+import Dropdown from "./Dropdown";
 import TagButton from "./TagButton";
 
 interface SearchAndTagsProps {
   tags: string[];
-  selectedTag: string | null;
+  selectedTag?: string;
   onTagSelect: (tag: string | null) => void;
 }
 
@@ -20,10 +21,7 @@ export default function SearchAndTags({ tags, selectedTag, onTagSelect }: Search
         />
 
         <div className="flex flex-wrap gap-2">
-          <TagButton key="all-posts" onClick={() => onTagSelect(null)} tag="All Posts" isSelected={selectedTag === null}/>
-          {tags.splice(0, 7).map((tag) => (
-            <TagButton key={tag} onClick={() => onTagSelect(tag == selectedTag ? null : tag)} tag={tag} isSelected={tag == selectedTag}/>
-          ))}
+          <Dropdown tags={tags} selectedTag={selectedTag} onTagSelect={onTagSelect}/>
         </div>
       </div>
     </section>
