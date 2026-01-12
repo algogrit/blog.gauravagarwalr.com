@@ -1,6 +1,9 @@
 import { cn } from "../../lib/utils";
+import safeURL from "../helpers/safeURL";
 
-export default function TagButton({tag, isSelected, onClick}: {tag: string, isSelected: boolean, onClick: () => void}) {
+interface TagButtonProps { tag: string, isSelected: boolean };
+
+export default function TagButton({tag, isSelected}: TagButtonProps) {
   let buttonClass = cn(
     "px-5 py-2 rounded-full cursor-pointer",
     isSelected ?
@@ -14,10 +17,10 @@ export default function TagButton({tag, isSelected, onClick}: {tag: string, isSe
 
 
   return (
-    <button  key="all-posts" onClick={onClick}
-      className={buttonClass}
-    >
-      {tagLabel}
-    </button>
+    <a href={safeURL("/posts", {"tag": tag})}>
+      <button className={buttonClass}>
+        {tagLabel}
+      </button>
+    </a>
   );
 }

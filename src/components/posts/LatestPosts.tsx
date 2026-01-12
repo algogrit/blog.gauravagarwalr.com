@@ -1,6 +1,5 @@
 import PostCard from "./PostCard";
 import type { PostWithRT } from "../../data/posts/interface";
-import HomeSearch from "../tags/HomeSearch";
 
 export default function LatestPosts({posts}: {posts: PostWithRT[]}) {
   return (
@@ -12,8 +11,6 @@ export default function LatestPosts({posts}: {posts: PostWithRT[]}) {
         </div>
         <a href="/posts" className="text-orange-500 dark:text-orange-400 font-semibold hover:underline">View All →</a>
       </div>
-
-      <HomeSearch/>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {posts.splice(0, 8).map(post => (
