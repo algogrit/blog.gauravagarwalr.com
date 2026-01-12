@@ -2,7 +2,7 @@ import { useMemo } from "react";
 
 import SearchAndTags from "../tags/SearchAndTags";
 
-import PostsNewsletter from "../cta/PostsNewsletter";
+// import PostsNewsletter from "../cta/PostsNewsletter";
 import type { PostWithRT } from "../../data/posts/interface";
 
 import setQueryParam from "../helpers/setQueryParam";
@@ -96,7 +96,7 @@ export default function PostIndex({ posts }: { posts: PostWithRT[] }) {
 
       </main>
 
-      <PostsNewsletter/>
+      {/* <PostsNewsletter/> */}
     </>
   );
 };

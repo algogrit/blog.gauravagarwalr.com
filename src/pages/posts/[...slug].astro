@@ -4,7 +4,7 @@ import { type CollectionEntry, getCollection, render } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate';
 import Base from '../../layouts/Base.astro';
 import PostTagPill from '../../components/tags/PostTagPill';
-import PostNewsletter from '../../components/cta/PostNewsletter';
+// import PostNewsletter from '../../components/cta/PostNewsletter';
 import RelatedPosts from '../../components/posts/RelatedPosts';
 import Comments from '../../components/sections/Comments';
 
@@ -59,7 +59,7 @@ const relatedPosts = (await getCollection('posts'))
 			<Content />
 		</div>
 
-		<PostNewsletter/>
+		<!-- <PostNewsletter/> -->
 		<RelatedPosts posts={relatedPosts}/>
 		<Comments client:only/>
 	</article>

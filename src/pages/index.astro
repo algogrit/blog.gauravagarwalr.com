@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content';
 import Hero from '../components/sections/Hero.astro';
 import About from '../components/sections/About';
 import Base from '../layouts/Base.astro';
-import HomeNewsletter from '../components/cta/HomeNewsletter';
+// import HomeNewsletter from '../components/cta/HomeNewsletter';
 
 import addReadingTime from '../data/posts/addReadingTime';
 import FeaturedPost from '../components/posts/FeaturedPost';
@@ -32,6 +32,6 @@ const allTags = Object.entries(tagCounts)
 	<FeaturedPost post={featuredPost}/>
 	<TagNav tags={allTags}/>
 	<LatestPosts posts={posts} />
-	<HomeNewsletter/>
+	<!-- <HomeNewsletter/> -->
 	<About/>
 </Base>
