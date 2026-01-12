@@ -61,7 +61,6 @@ const relatedPosts = (await getCollection('posts'))
 
 		<PostNewsletter/>
 		<RelatedPosts posts={relatedPosts}/>
-		<Comments/>
-
+		<Comments client:only/>
 	</article>
 </Base>
