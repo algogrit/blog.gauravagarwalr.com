@@ -9,3 +9,6 @@
   [headers.values]
     Access-Control-Allow-Origin = "*"
     Content-Type = "application/json"
+  for = "/rss.xml"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
