@@ -9,6 +9,10 @@
   [headers.values]
     Access-Control-Allow-Origin = "*"
     Content-Type = "application/json"
+
+[[headers]]
   for = "/rss.xml"
   [headers.values]
     Access-Control-Allow-Origin = "*"
+    Content-Type = "application/rss+xml; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
