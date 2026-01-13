@@ -15,17 +15,3 @@
   --color-accent-light: #fbbf24;
   --color-accent-dark: #ca8a04;
 }
-
-#moon-icon {
-	display: none;
-}
-
-.dark {
-	#sun-icon {
-		display: none;
-	}
-
-	#moon-icon {
-		display: block;
-	}
-}
