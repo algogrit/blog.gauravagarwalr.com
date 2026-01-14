@@ -12,7 +12,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-between h-16">
                     <a href="/" className="items-center flex">
                         <span className="text-2xl font-bold text-gray-900 dark:text-white">
-                            Gaurav&apos;s <span className="text-orange-500">blog</span>
+                            Gaurav&apos;s <span className="text-orange-400">blog</span>
                         </span>
                     </a>
 
