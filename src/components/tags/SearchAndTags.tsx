@@ -1,6 +1,5 @@
 import setQueryParam from "../helpers/setQueryParam";
 import Dropdown from "./Dropdown";
-import TagButton from "./TagButton";
 
 interface SearchAndTagsProps {
   tags: string[];
